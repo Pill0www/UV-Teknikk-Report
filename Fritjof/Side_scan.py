@@ -1,1 +1,2 @@
-import main as m
+import numpy as np
+import matplotlib.pyplot
