@@ -6,6 +6,7 @@ import matplotlib.colors as mcolors
 import matplotlib.cm as cmx
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import animation
+import datetime
 
 def read_file(filename):
     data = {}
@@ -43,107 +44,132 @@ def samle_lister(dict1, dict2, dict3,dict4, dict5, dict6):
 
 data = samle_lister(data1,data2,data3,data4,data5,data6)
 
+
+def parse_time(tid_str):
+    t = datetime.datetime.strptime(tid_str, "%H:%M:%S.%f")
+    return t.hour * 3600 + t.minute * 60 + t.second + t.microsecond/1e6
+
 def plot_pos_time(data):
     # Ekstraher data
-    x = []
-    y = []
-    z = []
-    for i in range(len(data)):
-        x.append(float(data["ROV East"][i]))
-        y.append(float(data["ROV North"][i]))
-        z.append(float(data["ROV Height"][i]))
-    
-    x = np.array(x)
-    y = np.array(y)
-    z = np.array(z)
-    time = data["Time"]  # antar tid er i stigende rekkefølge
-    
-    # Lag linjesegmenter for 3D plotting
+    x = np.array([float(val) for val in data["ROV East"]])
+    y = np.array([float(val) for val in data["ROV North"]])
+    z = np.array([float(val) for val in data["ROV Height"]])
+    time = np.array([parse_time(tid) for tid in data["Time"]])  # FIKSET HER
+
+    # Lag linjesegmenter
     points = np.array([x, y, z]).T.reshape(-1, 1, 3)
     segments = np.concatenate([points[:-1], points[1:]], axis=1)
-    
-    # Gjør om tid til numerisk skala for farge
-    t_numeric = np.linspace(0, 1, len(time))  # normaliser 0-1
+
+    # Normaliser tid for farger
+    t_numeric = (time - time.min()) / (time.max() - time.min())  # 0-1 skala
+    t_mean = (t_numeric[:-1] + t_numeric[1:]) / 2
 
     # Sett opp fargekart
-    cmap = plt.get_cmap('viridis')  # du kan bruke 'plasma', 'inferno', osv. hvis du vil
+    cmap = plt.get_cmap('viridis')
     norm = mcolors.Normalize(vmin=0, vmax=1)
-    lc = Line3DCollection(segments, cmap=cmap, norm=norm)
-    lc.set_array(t_numeric)
-    lc.set_linewidth(2)
+    colors = cmap(norm(t_mean))
+
+    # Lag Line3DCollection
+    lc = Line3DCollection(segments, colors=colors, linewidth=2)
 
     # Sett opp plot
     fig = plt.figure(figsize=(10, 8))
     ax = fig.add_subplot(111, projection='3d')
     ax.add_collection3d(lc)
 
-    # Sett grenser på akser
     ax.set_xlim(x.min(), x.max())
     ax.set_ylim(y.min(), y.max())
     ax.set_zlim(z.min(), z.max())
 
-    # Aksetitler
     ax.set_xlabel('East [m]')
     ax.set_ylabel('North [m]')
     ax.set_zlabel('Height [m]')
     ax.set_title('ROV 3D Posisjon med tidsfarge')
 
-    # Fargebar
-    cbar = fig.colorbar(lc, ax=ax, shrink=0.5, aspect=10)
+    mappable = cmx.ScalarMappable(norm=norm, cmap=cmap)
+    mappable.set_array(time)
+    cbar = fig.colorbar(mappable, ax=ax, shrink=0.5, aspect=10)
     cbar.set_label('Normalisert tid')
 
     plt.show()
 
 plot_pos_time(data)
 
-
 def animate_rov(data):
-    # Ekstraher data
-    x = []
-    y = []
-    z = []
-    for i in range(len(data)):
-        x.append(float(data["ROV East"][i]))
-        y.append(float(data["ROV North"][i]))
-        z.append(float(data["ROV Height"][i]))
-    
-    x = np.array(x)
-    y = np.array(y)
-    z = np.array(z)
+ 
+    x = np.array([float(val) for val in data["ROV East"]])
+    y = np.array([float(val) for val in data["ROV North"]])
+    z = np.array([float(val) for val in data["ROV Height"]])
+    heading_deg = np.array([float(val) for val in data["ROV Gyro"]])
+    time = np.array([parse_time(tid) for tid in data["Time"]])
 
-    # Sett opp figuren og 3D-aksen
+    t_numeric = (time - time.min()) / (time.max() - time.min())
+
+    points = np.array([x, y, z]).T.reshape(-1, 1, 3)
+    segments_all = np.concatenate([points[:-1], points[1:]], axis=1)
+
+    cmap = plt.get_cmap('viridis')
+    norm = mcolors.Normalize(vmin=0, vmax=1)
+    colors_all = cmap(norm((t_numeric[:-1] + t_numeric[1:]) / 2))
+
     fig = plt.figure(figsize=(10, 8))
     ax = fig.add_subplot(111, projection='3d')
-
-    # Sett grenser på akser
     ax.set_xlim(x.min(), x.max())
     ax.set_ylim(y.min(), y.max())
     ax.set_zlim(z.min(), z.max())
 
-    # Aksetitler
     ax.set_xlabel('East [m]')
     ax.set_ylabel('North [m]')
     ax.set_zlabel('Height [m]')
-    ax.set_title('ROV 3D Posisjon Animasjon')
+    ax.set_title('ROV 3D Posisjon Animasjon med Heading og Farge')
 
-    # Lag en linje som vi skal oppdatere
-    line, = ax.plot([], [], [], lw=2)
+    lc = Line3DCollection([], linewidth=2)
+    ax.add_collection3d(lc)
 
-    # Init-funksjon
+    # PILEN starter som None
+    arrow = None
+
+    mappable = cmx.ScalarMappable(norm=norm, cmap=cmap)
+    mappable.set_array(t_numeric)
+    cbar = fig.colorbar(mappable, ax=ax, shrink=0.5, aspect=10)
+    cbar.set_label('Normalisert tid')
+
+    step = 10
+
     def init():
-        line.set_data([], [])
-        line.set_3d_properties([])
-        return line,
+        lc.set_segments([])
+        return lc,
 
-    # Update-funksjon for hvert frame
     def update(frame):
-        line.set_data(x[:frame], y[:frame])
-        line.set_3d_properties(z[:frame])
-        return line,
+        nonlocal arrow
+        idx = frame * step
+        if idx >= len(x)-1:
+            idx = len(x)-2
 
-    # Lag animasjonen
-    ani = animation.FuncAnimation(fig, update, frames=len(x), init_func=init,
-                                  interval=100, blit=True)
+        # Oppdater linjen
+        current_segments = segments_all[:idx]
+        current_colors = colors_all[:idx]
+        lc.set_segments(current_segments)
+        lc.set_color(current_colors)
+
+        # Fjern gammel pil hvis den finnes
+        if arrow is not None:
+            arrow.remove()
+
+        # Lag ny pil
+        x0, y0, z0 = x[idx], y[idx], z[idx]
+        head = np.deg2rad(90 - heading_deg[idx])  # 0 grader = Nord
+        u = np.cos(head)
+        v = np.sin(head)
+        w = 0
+        arrow = ax.quiver(x0, y0, z0, u, v, w, color='red', length=5)
+
+        return lc, arrow
+
+    ani = animation.FuncAnimation(
+        fig, update, frames=int(len(x)/step), init_func=init,
+        interval=20, blit=False
+    )
 
     plt.show()
 
