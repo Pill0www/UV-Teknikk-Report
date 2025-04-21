@@ -1,0 +1,3009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" long-name="Inter Module Communication" name="IMC" version="5.4.23" xsi:noNamespaceSchemaLocation="IMC.xsd">
+
+  <types>
+    <type name="int8_t" size="1">
+      </type>
+    <type name="uint8_t" size="1">
+      </type>
+    <type name="int16_t" size="2">
+      </type>
+    <type name="uint16_t" size="2">
+      </type>
+    <type name="int32_t" size="4">
+      </type>
+    <type name="uint32_t" size="4">
+      </type>
+    <type name="int64_t" size="8">
+      </type>
+    <type name="fp32_t" size="4">
+      </type>
+    <type name="fp64_t" size="8">
+      </type>
+    <type name="rawdata">
+      </type>
+    <type name="plaintext">
+      </type>
+    <type name="message">
+      </type>
+    <type name="message-list">
+      </type>
+  </types>
+
+  <serialization>
+    <type name="rawdata">
+      </type>
+    <type name="plaintext">
+      </type>
+    <type name="message">
+      </type>
+    <type name="message-list">
+      </type>
+  </serialization>
+
+  <units>
+    <unit abbrev="A" name="Ampere" />
+    <unit abbrev="bit" name="Bit" />
+    <unit abbrev="bps" name="Bits per second" />
+    <unit abbrev="byte" name="Byte" />
+    <unit abbrev="g" name="Gravity acceleration" />
+    <unit abbrev="dm" name="Decimeter" />
+    <unit abbrev="dB" name="Decibel" />
+    <unit abbrev="dB/m" name="Decibel per meter" />
+    <unit abbrev="dBHz" name="Decibel hertz" />
+    <unit abbrev="°" name="Degree" />
+    <unit abbrev="°C" name="Degree Celsius" />
+    <unit abbrev="G" name="Gauss" />
+    <unit abbrev="hPa" name="Hectopascal" />
+    <unit abbrev="Hz" name="Hertz" />
+    <unit abbrev="kg/m/m/m" name="Kilogram per cubic metre" />
+    <unit abbrev="MiB" name="Mebibyte" />
+    <unit abbrev="m" name="Meter" />
+    <unit abbrev="m/s" name="Meter per second" />
+    <unit abbrev="m/s/s" name="Meter per square second" />
+    <unit abbrev="ms" name="Millisecond" />
+    <unit abbrev="µs" name="Microsecond" />
+    <unit abbrev="S/m" name="Siemens per meter" />
+    <unit abbrev="Nm" name="Newton meter" />
+    <unit abbrev="NTU" name="Nephelometric Turbidity Unit" />
+    <unit abbrev="N" name="Newton" />
+    <unit abbrev="Pa" name="Pascal" />
+    <unit abbrev="%" name="Percent" />
+    <unit abbrev="PPM" name="Parts per million" />
+    <unit abbrev="PPB" name="Parts per billion" />
+    <unit abbrev="1/m" name="Inverse Meter" />
+    <unit abbrev="px" name="Pixel" />
+    <unit abbrev="µg/L" name="Microgram per liter" />
+    <unit abbrev="µM" name="Micromolar" />
+    <unit abbrev="PSU" name="Pratical Salinity Unit" />
+    <unit abbrev="rad" name="Radian" />
+    <unit abbrev="rad/s" name="Radian per second" />
+    <unit abbrev="rpm" name="Revolutions per minute" />
+    <unit abbrev="rpm/s" name="Revolutions per minute per second" />
+    <unit abbrev="s" name="Second" />
+    <unit abbrev="V" name="Volt" />
+    <unit abbrev="Enumerated" name="Enumeration of integer values" />
+    <unit abbrev="List" name="Comma separated list of values" />
+    <unit abbrev="Bitfield" name="Bit field" />
+    <unit abbrev="TupleList" name="List of key/value tuples">
+      </unit>
+  </units>
+
+  <enumerations>
+    <def abbrev="SpeedUnits" name="Speed Units" prefix="SUNITS">
+      <value abbrev="METERS_PS" id="0" name="Meters per second" />
+      <value abbrev="RPM" id="1" name="RPM" />
+      <value abbrev="PERCENTAGE" id="2" name="Percentage" />
+    </def>
+
+    <def abbrev="SystemType" name="System Type" prefix="SYSTEMTYPE">
+      <value abbrev="CCU" id="0" name="CCU" />
+      <value abbrev="HUMANSENSOR" id="1" name="Human-portable Sensor" />
+      <value abbrev="UUV" id="2" name="UUV" />
+      <value abbrev="USV" id="3" name="USV" />
+      <value abbrev="UAV" id="4" name="UAV" />
+      <value abbrev="UGV" id="5" name="UGV" />
+      <value abbrev="STATICSENSOR" id="6" name="Static sensor" />
+      <value abbrev="MOBILESENSOR" id="7" name="Mobile sensor" />
+      <value abbrev="WSN" id="8" name="Wireless Sensor Network" />
+    </def>
+
+    <def abbrev="ZUnits" name="Z Units" prefix="Z">
+      <value abbrev="NONE" id="0" name="None" />
+      <value abbrev="DEPTH" id="1" name="Depth" />
+      <value abbrev="ALTITUDE" id="2" name="Altitude" />
+      <value abbrev="HEIGHT" id="3" name="Height" />
+    </def>
+
+    <def abbrev="RSSIUnits" name="RSSI Units" prefix="RSSIUNITS">
+      <value abbrev="dB" id="0" name="Decibel" />
+      <value abbrev="PERCENTAGE" id="1" name="Percentage" />
+    </def>
+  </enumerations>
+
+  <bitfields>
+    <def abbrev="CLoopsMask" name="Control Loops Mask" prefix="CL">
+      <value abbrev="NONE" id="0x00000000" name="None" />
+      <value abbrev="PATH" id="0x00000001" name="Path Control" />
+      <value abbrev="TELEOPERATION" id="0x00000002" name="Teleoperation Control" />
+      <value abbrev="ALTITUDE" id="0x00000004" name="Altitude Control" />
+      <value abbrev="DEPTH" id="0x00000008" name="Depth Control" />
+      <value abbrev="ROLL" id="0x00000010" name="Roll Control" />
+      <value abbrev="PITCH" id="0x00000020" name="Pitch Control" />
+      <value abbrev="YAW" id="0x00000040" name="Yaw Control" />
+      <value abbrev="SPEED" id="0x00000080" name="Speed Control" />
+      <value abbrev="YAW_RATE" id="0x00000100" name="Yaw Rate Control" />
+      <value abbrev="TORQUE" id="0x00000400" name="Torque Control" />
+      <value abbrev="FORCE" id="0x00000800" name="Force Control" />
+      <value abbrev="NO_OVERRIDE" id="0x80000000" name="Non-overridable control" />
+      <value abbrev="ALL" id="0xFFFFFFFF" name="All" />
+    </def>
+
+    <def abbrev="OpLimitsMask" name="Operational Limits Mask" prefix="OPL">
+      <value abbrev="MAX_DEPTH" id="0x01" name="Maximum Depth" />
+      <value abbrev="MIN_ALT" id="0x02" name="Minimum Altitude" />
+      <value abbrev="MAX_ALT" id="0x04" name="Maximum Altitude" />
+      <value abbrev="MIN_SPEED" id="0x08" name="Minimum Speed" />
+      <value abbrev="MAX_SPEED" id="0x10" name="Maximum Speed" />
+      <value abbrev="MAX_VRATE" id="0x20" name="Maximum Vertical Rate" />
+      <value abbrev="AREA" id="0x40" name="Operation Area" />
+    </def>
+  </bitfields>
+
+  <message-groups>
+    <message-group abbrev="Maneuver" name="Maneuver">
+      <message-type abbrev="Alignment" />
+      <message-type abbrev="CustomManeuver" />
+      <message-type abbrev="CompassCalibration" />
+      <message-type abbrev="Dislodge" />
+      <message-type abbrev="Elevator" />
+      <message-type abbrev="FollowCommand" />
+      <message-type abbrev="FollowPath" />
+      <message-type abbrev="FollowReference" />
+      <message-type abbrev="FollowTrajectory" />
+      <message-type abbrev="Goto" />
+      <message-type abbrev="IdleManeuver" />
+      <message-type abbrev="Launch" />
+      <message-type abbrev="Loiter" />
+      <message-type abbrev="Magnetometer" />
+      <message-type abbrev="PopUp" />
+      <message-type abbrev="Teleoperation" />
+      <message-type abbrev="Rows" />
+      <message-type abbrev="StationKeeping" />
+      <message-type abbrev="YoYo" />
+    </message-group>
+
+    <message-group abbrev="ControlCommand" name="Control Command">
+      <message-type abbrev="DesiredZ" />
+      <message-type abbrev="DesiredHeading" />
+      <message-type abbrev="DesiredRoll" />
+      <message-type abbrev="DesiredPitch" />
+      <message-type abbrev="DesiredSpeed" />
+      <message-type abbrev="DesiredPath" />
+    </message-group>
+  </message-groups>
+
+  <flags>
+    <flag abbrev="periodic" name="Periodic" />
+    <flag abbrev="deprecated" name="Deprecated" />
+  </flags>
+
+  <header>
+    <field abbrev="sync" fixed="true" name="Synchronization Number" type="uint16_t" value="0xFE54">
+      </field>
+    <field abbrev="mgid" name="Message Identification Number" type="uint16_t">
+      </field>
+    <field abbrev="size" name="Message size" type="uint16_t" unit="byte">
+      </field>
+    <field abbrev="timestamp" name="Time stamp" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="src" name="Source Address" type="uint16_t">
+      </field>
+    <field abbrev="src_ent" name="Source Entity" type="uint8_t">
+      </field>
+    <field abbrev="dst" name="Destination Address" type="uint16_t">
+      </field>
+    <field abbrev="dst_ent" name="Destination Entity" type="uint8_t">
+      </field>
+  </header>
+
+  <footer>
+    <field abbrev="crc16" name="Check Sum (CRC-16-IBM)" type="uint16_t">
+      </field>
+  </footer>
+
+  
+  <message abbrev="EntityState" category="Core" id="1" name="Entity State" source="vehicle">
+    <field abbrev="state" name="State" prefix="ESTA" type="uint8_t" unit="Enumerated">
+      <value abbrev="BOOT" id="0" name="Bootstrapping" />
+      <value abbrev="NORMAL" id="1" name="Normal Operation" />
+      <value abbrev="FAULT" id="2" name="Fault" />
+      <value abbrev="ERROR" id="3" name="Error" />
+      <value abbrev="FAILURE" id="4" name="Failure" />
+    </field>
+    <field abbrev="flags" name="Flags" prefix="EFLA" type="uint8_t" unit="Bitfield">
+      <value abbrev="HUMAN_INTERVENTION" id="0x01" name="Human Intervention Required" />
+    </field>
+    <field abbrev="description" name="Complementary description" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="QueryEntityState" category="Core" flags="periodic" id="2" name="Query Entity State">
+    </message>
+
+  <message abbrev="EntityInfo" category="Core" id="3" name="Entity Information" source="vehicle">
+    <field abbrev="id" name="Entity Identifier" type="uint8_t">
+      </field>
+    <field abbrev="label" name="Label" type="plaintext">
+      </field>
+    <field abbrev="component" name="Component name" type="plaintext">
+      </field>
+    <field abbrev="act_time" name="Activation Time" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="deact_time" name="Deactivation Time" type="uint16_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="QueryEntityInfo" category="Core" id="4" name="Query Entity Information" source="ccu">
+    <field abbrev="id" name="Entity Identifier" type="uint8_t">
+      </field>
+  </message>
+
+  <message abbrev="EntityList" category="Core" id="5" name="Entity List" source="vehicle">
+    <field abbrev="op" name="operation" prefix="OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="REPORT" id="0" name="Report" />
+      <value abbrev="QUERY" id="1" name="Query" />
+    </field>
+    <field abbrev="list" name="list" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="CpuUsage" category="Core" flags="periodic" id="7" name="CPU Usage" source="vehicle">
+    <field abbrev="value" max="100" name="Usage percentage" type="uint8_t" unit="%">
+      </field>
+  </message>
+
+  <message abbrev="TransportBindings" category="Core" id="8" name="Transport Bindings" source="vehicle">
+    <field abbrev="consumer" name="Consumer name" type="plaintext">
+      </field>
+    <field abbrev="message_id" name="Message Identifier" type="uint16_t">
+      </field>
+  </message>
+
+  <message abbrev="RestartSystem" category="Core" id="9" name="Restart System" source="ccu">
+    </message>
+
+  <message abbrev="EntityActivationState" category="Core" id="14" name="Entity Activation State" source="vehicle,ccu">
+    <field abbrev="state" name="State" prefix="EAS" type="uint8_t" unit="Enumerated">
+      <value abbrev="INACTIVE" id="0" name="Entity is Inactive">
+        </value>
+      <value abbrev="ACTIVE" id="1" name="Entity is Active">
+        </value>
+      <value abbrev="ACT_IP" id="2" name="Activation in Progress">
+        </value>
+      <value abbrev="ACT_DONE" id="3" name="Activation Completed">
+        </value>
+      <value abbrev="ACT_FAIL" id="4" name="Activation Failed">
+        </value>
+      <value abbrev="DEACT_IP" id="5" name="Deactivation In Progress">
+        </value>
+      <value abbrev="DEACT_DONE" id="6" name="Deactivation Completed">
+        </value>
+      <value abbrev="DEACT_FAIL" id="7" name="Deactivation Failed">
+        </value>
+    </field>
+    <field abbrev="error" name="Error" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="QueryEntityActivationState" category="Core" id="15" name="Query Entity Activation State" source="vehicle,ccu">
+    </message>
+
+  <message abbrev="VehicleOperationalLimits" category="Core" id="16" name="Vehicle Operational Limits" source="vehicle,ccu">
+    <field abbrev="op" name="Action on the vehicle operational limits" prefix="OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="REQUEST" id="0" name="Request" />
+      <value abbrev="SET" id="1" name="Set" />
+      <value abbrev="REPORT" id="2" name="Report" />
+    </field>
+    <field abbrev="speed_min" min="0" name="Minimum speed" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="speed_max" min="0" name="Maximum speed" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="long_accel" min="0" name="Longitudinal maximum acceleration" type="fp32_t" unit="m/s/s">
+      </field>
+    <field abbrev="alt_max_msl" min="0" name="Maximum MSL altitude" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="dive_fraction_max" min="0" name="Maximum Dive Rate Speed Fraction" type="fp32_t">
+      </field>
+    <field abbrev="climb_fraction_max" min="0" name="Maximum Climb Rate Speed Fraction" type="fp32_t">
+      </field>
+    <field abbrev="bank_max" min="0" name="Bank limit" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="p_max" min="0" name="Bank rate limit" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="pitch_min" name="Minimum pitch angle" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="pitch_max" name="Maximum pitch angle" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="q_max" min="0" name="Maximum pitch rate" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="g_min" max="0" name="Minimum load factor" type="fp32_t" unit="g">
+      </field>
+    <field abbrev="g_max" min="0" name="Maximum load factor" type="fp32_t" unit="g">
+      </field>
+    <field abbrev="g_lat_max" min="0" name="Maximum lateral load factor" type="fp32_t" unit="g">
+      </field>
+    <field abbrev="rpm_min" min="0" name="Minimum RPMs" type="fp32_t" unit="rpm">
+      </field>
+    <field abbrev="rpm_max" min="0" name="Maximum RPMs" type="fp32_t" unit="rpm">
+      </field>
+    <field abbrev="rpm_rate_max" min="0" name="Maximum RPM rate" type="fp32_t" unit="rpm/s">
+      </field>
+  </message>
+
+  <message abbrev="MsgList" category="Core" id="20" name="Message List">
+    <field abbrev="msgs" name="Messages" type="message-list" />
+  </message>
+
+  
+  <message abbrev="SimulatedState" category="Simulation" id="50" name="Simulated State" source="vehicle">
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude (WGS-84)" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude (WGS-84)" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="height" name="Height (WGS-84)" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="x" name="Offset north (m)" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="y" name="Offset east (m)" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z" name="Offset down (m)" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="phi" max="3.141592653589793" min="-3.141592653589793" name="Rotation over x axis" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="theta" max="1.57079632679490" min="-1.57079632679490" name="Rotation over y axis" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="psi" max="3.141592653589793" min="-3.141592653589793" name="Rotation over z axis" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="u" name="Body-Fixed xx Linear Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="v" name="Body-Fixed yy Linear Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="w" name="Body-Fixed zz Linear Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="p" max="3.141592653589793" min="-3.141592653589793" name="Angular Velocity in x" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="q" max="3.141592653589793" min="-3.141592653589793" name="Angular Velocity in y" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="r" max="3.141592653589793" min="-3.141592653589793" name="Angular Velocity in z" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="svx" name="Stream Velocity X (North)" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="svy" name="Stream Velocity Y (East)" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="svz" name="Stream Velocity Z (Down)" type="fp32_t" unit="m/s">
+      </field>
+  </message>
+
+  
+  <message abbrev="StorageUsage" category="Storage" flags="periodic" id="100" name="Storage Usage" source="vehicle">
+    <field abbrev="available" name="Available" type="uint32_t" unit="MiB">
+      </field>
+    <field abbrev="value" max="100" name="Usage" type="uint8_t" unit="%">
+      </field>
+  </message>
+
+  <message abbrev="CacheControl" category="Storage" id="101" name="Cache Control" source="vehicle,ccu">
+    <field abbrev="op" name="Control Operation" prefix="COP" type="uint8_t" unit="Enumerated">
+      <value abbrev="STORE" id="0" name="Store" />
+      <value abbrev="LOAD" id="1" name="Load" />
+      <value abbrev="CLEAR" id="2" name="Clear" />
+      <value abbrev="COPY" id="3" name="Copy Snapshot" />
+      <value abbrev="COPY_COMPLETE" id="4" name="Snapshot Copy Complete" />
+    </field>
+    <field abbrev="snapshot" name="Snapshot destination" type="plaintext">
+      </field>
+    <field abbrev="message" name="Message" type="message">
+      </field>
+  </message>
+
+  <message abbrev="LoggingControl" category="Storage" id="102" name="Logging Control" source="vehicle,ccu">
+    <field abbrev="op" name="Control Operation" prefix="COP" type="uint8_t" unit="Enumerated">
+      <value abbrev="REQUEST_START" id="0" name="Request Start of Logging">
+        </value>
+      <value abbrev="STARTED" id="1" name="Logging Started">
+        </value>
+      <value abbrev="REQUEST_STOP" id="2" name="Request Logging Stop">
+        </value>
+      <value abbrev="STOPPED" id="3" name="Logging Stopped">
+        </value>
+      <value abbrev="REQUEST_CURRENT_NAME" id="4" name="Request Current Log Name">
+        </value>
+      <value abbrev="CURRENT_NAME" id="5" name="Current Log Name">
+        </value>
+    </field>
+    <field abbrev="name" name="Log Label / Path" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="LogBookEntry" category="Storage" id="103" name="Log Book Entry" source="vehicle,ccu">
+    <field abbrev="type" name="Type" prefix="LBET" type="uint8_t" unit="Enumerated">
+      <value abbrev="INFO" id="0" name="Information" />
+      <value abbrev="WARNING" id="1" name="Warning" />
+      <value abbrev="ERROR" id="2" name="Error" />
+      <value abbrev="CRITICAL" id="3" name="Critical" />
+      <value abbrev="DEBUG" id="4" name="Debug" />
+    </field>
+    <field abbrev="htime" name="Timestamp" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="context" name="Context" type="plaintext">
+      </field>
+    <field abbrev="text" name="Text" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="LogBookControl" category="Storage" id="104" name="Log Book Control" source="ccu,vehicle">
+    <field abbrev="command" name="Command" prefix="LBC" type="uint8_t" unit="Enumerated">
+      <value abbrev="GET" id="0" name="Get">
+        </value>
+      <value abbrev="CLEAR" id="1" name="Clear">
+        </value>
+      <value abbrev="GET_ERR" id="2" name="Get Errors">
+        </value>
+      <value abbrev="REPLY" id="3" name="Reply">
+        </value>
+    </field>
+    <field abbrev="htime" name="Timestamp" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="msg" message-type="LogBookEntry" name="Messages" type="message-list">
+      </field>
+  </message>
+
+  <message abbrev="ReplayControl" category="Storage" id="105" name="Replay Control">
+    <field abbrev="op" name="Operation" prefix="ROP" type="uint8_t" unit="Enumerated">
+      <value abbrev="START" id="0" name="Start" />
+      <value abbrev="STOP" id="1" name="Stop" />
+      <value abbrev="PAUSE" id="2" name="Pause" />
+      <value abbrev="RESUME" id="3" name="Resume" />
+    </field>
+    <field abbrev="file" name="File To Replay" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="ClockControl" category="Storage" id="106" name="Clock Control" used-by="vehicle,ccu">
+    <field abbrev="op" name="Operation" prefix="COP" type="uint8_t" unit="Enumerated">
+      <value abbrev="SYNC_EXEC" id="0" name="Execute Sync.">
+        </value>
+      <value abbrev="SYNC_REQUEST" id="1" name="Request Sync.">
+        </value>
+      <value abbrev="SYNC_STARTED" id="2" name="Sync. Started">
+        </value>
+      <value abbrev="SYNC_DONE" id="3" name="Sync. done">
+        </value>
+      <value abbrev="SET_TZ" id="4" name="Set Timezone ">
+        </value>
+      <value abbrev="SET_TZ_DONE" id="5" name="Timezone Setup">
+        </value>
+    </field>
+    <field abbrev="clock" name="Clock" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="tz" max="23" min="-23" name="Timezone" type="int8_t">
+      </field>
+  </message>
+
+  
+  <message abbrev="Heartbeat" category="Networking" flags="periodic" id="150" name="Heartbeat" source="vehicle,ccu">
+    </message>
+
+  <message abbrev="Announce" category="Networking" id="151" name="Announce" source="vehicle,ccu">
+    <field abbrev="sys_name" name="System Name" type="plaintext">
+      </field>
+    <field abbrev="sys_type" enum-def="SystemType" name="System Type" type="uint8_t" unit="Enumerated">
+      </field>
+    <field abbrev="owner" name="Control Owner" type="uint16_t">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="height" name="Height WGS-84" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="services" name="Services" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="AnnounceService" category="Networking" id="152" name="Announce Service" source="vehicle">
+    <field abbrev="service" name="Service" type="plaintext">
+      </field>
+    <field abbrev="service_type" name="ServiceType" prefix="SRV_TYPE" type="uint8_t" unit="Bitfield">
+      <value abbrev="EXTERNAL" id="0x01" name="External" />
+      <value abbrev="LOCAL" id="0x02" name="Local" />
+    </field>
+  </message>
+
+  <message abbrev="RSSI" category="Networking" id="153" name="Receive Signal Strength Information" source="vehicle">
+    <field abbrev="value" max="100" name="Value" type="fp32_t" unit="%">
+      </field>
+  </message>
+
+  <message abbrev="Sms" category="Networking" flags="deprecated" id="156" name="SMS" source="vehicle">
+    <field abbrev="number" name="Number" type="plaintext">
+      </field>
+    <field abbrev="timeout" name="Timeout" type="uint16_t">
+      </field>
+    <field abbrev="contents" name="Contents" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="SmsTx" category="Networking" id="157" name="SMS Transmit" source="vehicle,ccu">
+    <field abbrev="seq" name="Sequence Number" type="uint32_t">
+      </field>
+    <field abbrev="destination" name="Destination" type="plaintext">
+      </field>
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="data" name="Data" type="rawdata">
+      </field>
+  </message>
+
+  <message abbrev="SmsRx" category="Networking" id="158" name="SMS Receive" source="vehicle">
+    <field abbrev="source" name="Source" type="plaintext">
+      </field>
+    <field abbrev="data" name="Data" type="rawdata">
+      </field>
+  </message>
+
+  <message abbrev="SmsState" category="Networking" id="159" name="SMS State" source="vehicle">
+    <field abbrev="seq" name="Sequence Number" type="uint32_t">
+      </field>
+    <field abbrev="state" name="State" prefix="SMS" type="uint8_t" unit="Enumerated">
+      <value abbrev="ACCEPTED" id="0" name="Accepted" />
+      <value abbrev="REJECTED" id="1" name="Rejected" />
+      <value abbrev="INTERRUPTED" id="2" name="Interrupted" />
+      <value abbrev="COMPLETED" id="3" name="Completed" />
+      <value abbrev="IDLE" id="4" name="Idle" />
+      <value abbrev="TRANSMITTING" id="5" name="Transmitting" />
+      <value abbrev="RECEIVING" id="6" name="Receiving" />
+    </field>
+    <field abbrev="error" name="Error Message" type="plaintext" />
+  </message>
+
+  <message abbrev="TextMessage" category="Networking" id="160" name="Text Message" source="vehicle">
+    <field abbrev="origin" name="Origin" type="plaintext">
+      </field>
+    <field abbrev="text" name="Text" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="IridiumMsgRx" category="Networking" id="170" name="Received Iridium Message" source="vehicle,ccu">
+    <field abbrev="origin" name="Origin Identifier" type="plaintext">
+      </field>
+    <field abbrev="htime" name="Timestamp" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="lat" name="Latitude Reference" type="fp64_t" unit="rad" />
+    <field abbrev="lon" name="Longitude Reference" type="fp64_t" unit="rad" />
+    <field abbrev="data" name="Data" type="rawdata">
+      </field>
+  </message>
+
+  <message abbrev="IridiumMsgTx" category="Networking" id="171" name="Transmit Iridium Message" source="vehicle,ccu">
+    <field abbrev="req_id" name="Request Identifier" type="uint16_t">
+      </field>
+    <field abbrev="ttl" name="Time to live" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="destination" name="Destination Identifier" type="plaintext">
+      </field>
+    <field abbrev="data" name="Data" type="rawdata">
+      </field>
+  </message>
+
+  <message abbrev="IridiumTxStatus" category="Networking" id="172" name="Iridium Transmission Status" source="vehicle,ccu">
+    <field abbrev="req_id" name="Request Identifier" type="uint16_t">
+      </field>
+    <field abbrev="status" name="Status Code" prefix="TXSTATUS" type="uint8_t" unit="Enumerated">
+      <value abbrev="OK" id="1" name="Successfull transmission" />
+      <value abbrev="ERROR" id="2" name="Error while trying to transmit message" />
+      <value abbrev="QUEUED" id="3" name="Message has been queued for transmission" />
+      <value abbrev="TRANSMIT" id="4" name="Message is currently being transmitted" />
+      <value abbrev="EXPIRED" id="5" name="Message's TTL has expired. Transmition cancelled." />
+    </field>
+    <field abbrev="text" name="Status Text" type="plaintext" />
+  </message>
+
+  <message abbrev="ExtendedRSSI" category="Networking" id="183" name="Extended Receive Signal Strength Information" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t">
+      </field>
+    <field abbrev="units" enum-def="RSSIUnits" name="RSSI Units" type="uint8_t" unit="Enumerated">
+      </field>
+  </message>
+
+  
+  <message abbrev="LblRange" category="Acoustic Communication" flags="periodic" id="200" name="LBL Range" source="vehicle">
+    <field abbrev="id" name="Beacon Identification Number" type="uint8_t">
+      </field>
+    <field abbrev="range" name="Range" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="LblBeacon" category="Acoustic Communication" id="202" name="LBL Beacon Configuration" source="ccu,vehicle">
+    <field abbrev="beacon" name="Beacon Name" type="plaintext">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="depth" name="Depth" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="query_channel" name="Interrogation channel" type="uint8_t">
+      </field>
+    <field abbrev="reply_channel" name="Reply channel" type="uint8_t">
+      </field>
+    <field abbrev="transponder_delay" name="Transponder delay" type="uint8_t" unit="ms">
+      </field>
+  </message>
+
+  <message abbrev="LblConfig" category="Acoustic Communication" id="203" name="LBL Configuration" source="ccu,vehicle">
+    <field abbrev="op" name="Operation" prefix="OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="SET_CFG" id="0" name="Set LBL Configuration">
+        </value>
+      <value abbrev="GET_CFG" id="1" name="Retrieve LBL Configuration">
+        </value>
+      <value abbrev="CUR_CFG" id="2" name="Reply to a GET command" />
+    </field>
+    <field abbrev="beacons" message-type="LblBeacon" name="Beacons" type="message-list">
+      </field>
+  </message>
+
+  <message abbrev="AcousticOperation" category="Acoustic Communication" id="211" name="Acoustic Operation">
+    <field abbrev="op" name="Operation" prefix="AOP" type="uint8_t" unit="Enumerated">
+      <value abbrev="ABORT" id="0" name="Abort">
+        </value>
+      <value abbrev="ABORT_IP" id="1" name="Abort in Progress">
+        </value>
+      <value abbrev="ABORT_TIMEOUT" id="2" name="Abort Timeout">
+        </value>
+      <value abbrev="ABORT_ACKED" id="3" name="Abort Acknowledged">
+        </value>
+      <value abbrev="RANGE" id="4" name="Range Request">
+        </value>
+      <value abbrev="RANGE_IP" id="5" name="Range in Progress">
+        </value>
+      <value abbrev="RANGE_TIMEOUT" id="6" name="Range Timeout">
+        </value>
+      <value abbrev="RANGE_RECVED" id="7" name="Range Received">
+        </value>
+      <value abbrev="BUSY" id="8" name="Modem is Busy">
+        </value>
+      <value abbrev="UNSUPPORTED" id="9" name="Unsupported operation">
+        </value>
+      <value abbrev="NO_TXD" id="10" name="Transducer Not Detected">
+        </value>
+      <value abbrev="MSG" id="11" name="Send Message">
+        </value>
+      <value abbrev="MSG_QUEUED" id="12" name="Message Send -- Queued">
+        </value>
+      <value abbrev="MSG_IP" id="13" name="Message Send -- In progress">
+        </value>
+      <value abbrev="MSG_DONE" id="14" name="Message Send -- Done">
+        </value>
+      <value abbrev="MSG_FAILURE" id="15" name="Message Send -- Failure">
+        </value>
+      <value abbrev="MSG_SHORT" id="16" name="Send Short Message">
+        </value>
+    </field>
+    <field abbrev="system" name="System" type="plaintext">
+      </field>
+    <field abbrev="range" name="Range" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="msg" name="Message To Send" type="message">
+      </field>
+  </message>
+
+  <message abbrev="AcousticSystemsQuery" category="Acoustic Communication" id="212" name="Acoustic Systems Query" source="ccu,vehicle">
+    </message>
+
+  <message abbrev="AcousticSystems" category="Acoustic Communication" id="213" name="Acoustic Systems" source="ccu,vehicle">
+    <field abbrev="list" name="System List" type="plaintext" unit="List">
+      </field>
+  </message>
+
+  <message abbrev="AcousticLink" category="Acoustic Communication" id="214" name="Acoustic Link Quality">
+    <field abbrev="peer" name="Peer Name" type="plaintext">
+      </field>
+    <field abbrev="rssi" name="Received Signal Strength Indicator" type="fp32_t" unit="dB">
+      </field>
+    <field abbrev="integrity" name="Signal Integrity Level" type="uint16_t">
+      </field>
+  </message>
+
+  
+  <message abbrev="Rpm" category="Sensors" id="250" name="Revolutions Per Minute" source="vehicle">
+    <field abbrev="value" name="Value" type="int16_t" unit="rpm">
+      </field>
+  </message>
+
+  <message abbrev="Voltage" category="Sensors" flags="periodic" id="251" name="Voltage" source="vehicle">
+    <field abbrev="value" name="Measured Voltage Value" type="fp32_t" unit="V">
+      </field>
+  </message>
+
+  <message abbrev="Current" category="Sensors" flags="periodic" id="252" name="Current" source="vehicle">
+    <field abbrev="value" name="Measured Current Value" type="fp32_t" unit="A">
+      </field>
+  </message>
+
+  <message abbrev="GpsFix" category="Sensors" flags="periodic" id="253" name="GPS Fix" source="vehicle">
+    <field abbrev="validity" name="Validity" prefix="GFV" type="uint16_t" unit="Bitfield">
+      <value abbrev="VALID_DATE" id="0x0001" name="Valid Date">
+        </value>
+      <value abbrev="VALID_TIME" id="0x0002" name="Valid Time">
+        </value>
+      <value abbrev="VALID_POS" id="0x0004" name="Valid Position">
+        </value>
+      <value abbrev="VALID_COG" id="0x0008" name="Valid Course Over Ground">
+        </value>
+      <value abbrev="VALID_SOG" id="0x0010" name="Valid Speed Over Ground">
+        </value>
+      <value abbrev="VALID_HACC" id="0x0020" name="Valid Horizontal Accuracy Estimate">
+        </value>
+      <value abbrev="VALID_VACC" id="0x0040" name="Valid Vertical Accuracy Estimate">
+        </value>
+      <value abbrev="VALID_HDOP" id="0x0080" name="Valid Horizontal Dilution of Precision">
+        </value>
+      <value abbrev="VALID_VDOP" id="0x0100" name="Valid Vertical Dilution of Precision">
+        </value>
+    </field>
+    <field abbrev="type" name="Type" prefix="GFT" type="uint8_t" unit="Enumerated">
+      <value abbrev="STANDALONE" id="0x00" name="Stand Alone">
+        </value>
+      <value abbrev="DIFFERENTIAL" id="0x01" name="Differential">
+        </value>
+      <value abbrev="DEAD_RECKONING" id="0x02" name="Dead Reckoning">
+        </value>
+      <value abbrev="MANUAL_INPUT" id="0x03" name="Manual Input">
+        </value>
+      <value abbrev="SIMULATION" id="0x04" name="Simulation">
+        </value>
+    </field>
+    <field abbrev="utc_year" name="UTC Year" type="uint16_t">
+      </field>
+    <field abbrev="utc_month" name="UTC Month" type="uint8_t">
+      </field>
+    <field abbrev="utc_day" name="UTC Day" type="uint8_t">
+      </field>
+    <field abbrev="utc_time" name="UTC Time of Fix" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="height" name="Height above WGS-84 ellipsoid" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="satellites" name="Number of Satellites" type="uint8_t">
+      </field>
+    <field abbrev="cog" name="Course Over Ground" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="sog" name="Speed Over Ground" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="hdop" name="Horizontal Dilution of Precision" type="fp32_t">
+      </field>
+    <field abbrev="vdop" name="Vertical Dilution of Precision" type="fp32_t">
+      </field>
+    <field abbrev="hacc" name="Horizontal Accuracy Estimate" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="vacc" name="Vertical Accuracy Estimate" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="EulerAngles" category="Sensors" flags="periodic" id="254" name="Euler Angles" source="vehicle">
+    <field abbrev="time" name="Device Time" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="phi" max="3.141592653589793" min="-3.141592653589793" name="Roll Angle" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="theta" max="1.57079632679490" min="-1.57079632679490" name="Pitch Angle" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="psi" max="3.141592653589793" min="-3.141592653589793" name="Yaw Angle (True)" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="psi_magnetic" max="3.141592653589793" min="-3.141592653589793" name="Yaw Angle (Magnetic)" type="fp64_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="EulerAnglesDelta" category="Sensors" flags="periodic" id="255" name="Euler Angles Delta" source="vehicle">
+    <field abbrev="time" name="Device Time" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="x" name="X" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="y" name="Y" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="timestep" name="Timestep" type="fp32_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="AngularVelocity" category="Sensors" flags="periodic" id="256" name="Angular Velocity" source="vehicle">
+    <field abbrev="time" name="Device Time" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="x" name="X" type="fp64_t" unit="rad/s">
+      </field>
+    <field abbrev="y" name="Y" type="fp64_t" unit="rad/s">
+      </field>
+    <field abbrev="z" name="Z" type="fp64_t" unit="rad/s">
+      </field>
+  </message>
+
+  <message abbrev="Acceleration" category="Sensors" flags="periodic" id="257" name="Acceleration" source="vehicle">
+    <field abbrev="time" name="Device Time" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="x" name="X" type="fp64_t" unit="m/s/s">
+      </field>
+    <field abbrev="y" name="Y" type="fp64_t" unit="m/s/s">
+      </field>
+    <field abbrev="z" name="Z" type="fp64_t" unit="m/s/s">
+      </field>
+  </message>
+
+  <message abbrev="MagneticField" category="Sensors" flags="periodic" id="258" name="Magnetic Field" source="vehicle">
+    <field abbrev="time" name="Device Time" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="x" name="X" type="fp64_t" unit="G">
+      </field>
+    <field abbrev="y" name="Y" type="fp64_t" unit="G">
+      </field>
+    <field abbrev="z" name="Z" type="fp64_t" unit="G">
+      </field>
+  </message>
+
+  <message abbrev="GroundVelocity" category="Sensors" flags="periodic" id="259" name="Ground Velocity" source="vehicle">
+    <field abbrev="validity" name="Validity" prefix="VAL" type="uint8_t" unit="Bitfield">
+      <value abbrev="VEL_X" id="0x01" name="X component is valid" />
+      <value abbrev="VEL_Y" id="0x02" name="Y component is valid" />
+      <value abbrev="VEL_Z" id="0x04" name="Z component is valid" />
+    </field>
+    <field abbrev="x" name="X" type="fp64_t" unit="m/s">
+      </field>
+    <field abbrev="y" name="Y" type="fp64_t" unit="m/s">
+      </field>
+    <field abbrev="z" name="Z" type="fp64_t" unit="m/s">
+      </field>
+  </message>
+
+  <message abbrev="WaterVelocity" category="Sensors" flags="periodic" id="260" name="Water Velocity" source="vehicle">
+    <field abbrev="validity" name="Validity" prefix="VAL" type="uint8_t" unit="Bitfield">
+      <value abbrev="VEL_X" id="0x01" name="X component is valid" />
+      <value abbrev="VEL_Y" id="0x02" name="Y component is valid" />
+      <value abbrev="VEL_Z" id="0x04" name="Z component is valid" />
+    </field>
+    <field abbrev="x" name="X" type="fp64_t" unit="m/s">
+      </field>
+    <field abbrev="y" name="Y" type="fp64_t" unit="m/s">
+      </field>
+    <field abbrev="z" name="Z" type="fp64_t" unit="m/s">
+      </field>
+  </message>
+
+  <message abbrev="VelocityDelta" category="Sensors" flags="periodic" id="261" name="Velocity Delta" source="vehicle">
+    <field abbrev="time" name="Device Time" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="x" name="X" type="fp64_t" unit="m/s">
+      </field>
+    <field abbrev="y" name="Y" type="fp64_t" unit="m/s">
+      </field>
+    <field abbrev="z" name="Z" type="fp64_t" unit="m/s">
+      </field>
+  </message>
+
+  <message abbrev="Distance" category="Sensors" flags="periodic" id="262" name="Distance" source="vehicle">
+    <field abbrev="validity" name="Validity" prefix="DV" type="uint8_t" unit="Enumerated">
+      <value abbrev="INVALID" id="0" name="Invalid">
+        </value>
+      <value abbrev="VALID" id="1" name="Valid">
+        </value>
+    </field>
+    <field abbrev="location" message-type="DeviceState" name="Location" type="message-list">
+      </field>
+    <field abbrev="beam_config" message-type="BeamConfig" name="Beam Configuration" type="message-list">
+      </field>
+    <field abbrev="value" name="Measured Distance" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="Temperature" category="Sensors" flags="periodic" id="263" name="Temperature" source="vehicle">
+    <field abbrev="value" name="Measured Temperature" type="fp32_t" unit="°C">
+      </field>
+  </message>
+
+  <message abbrev="Pressure" category="Sensors" flags="periodic" id="264" name="Pressure" source="vehicle">
+    <field abbrev="value" name="Measured Pressure" type="fp64_t" unit="hPa">
+      </field>
+  </message>
+
+  <message abbrev="Depth" category="Sensors" flags="periodic" id="265" name="Depth" source="vehicle">
+    <field abbrev="value" name="Measured Depth" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="SoundSpeed" category="Sensors" flags="periodic" id="267" name="Sound Speed" source="vehicle">
+    <field abbrev="value" name="Computed Sound Speed" type="fp32_t" unit="m/s">
+      </field>
+  </message>
+
+  <message abbrev="WaterDensity" category="Sensors" flags="periodic" id="268" name="Water Density" source="vehicle">
+    <field abbrev="value" name="Computed Water Density" type="fp32_t" unit="kg/m/m/m">
+      </field>
+  </message>
+
+  <message abbrev="Conductivity" category="Sensors" flags="periodic" id="269" name="Conductivity" source="vehicle">
+    <field abbrev="value" name="Measured Conductivity" type="fp32_t" unit="S/m">
+      </field>
+  </message>
+
+  <message abbrev="Salinity" category="Sensors" flags="periodic" id="270" name="Salinity" source="vehicle">
+    <field abbrev="value" name="Measured Salinity" type="fp32_t" unit="PSU">
+      </field>
+  </message>
+
+  <message abbrev="RelativeHumidity" category="Sensors" flags="periodic" id="272" name="Relative Humidity" source="vehicle">
+    <field abbrev="value" max="100" min="0" name="Relative Humidity Value" type="fp32_t">
+      </field>
+  </message>
+
+  <message abbrev="DevDataText" category="Sensors" id="273" name="Device Data (Text)" source="vehicle">
+    <field abbrev="value" name="Value" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="DevDataBinary" category="Sensors" id="274" name="Device Data (Binary)" source="vehicle">
+    <field abbrev="value" name="Value" type="rawdata">
+      </field>
+  </message>
+
+  <message abbrev="SonarData" category="Sensors" flags="periodic" id="276" name="Sonar Data" source="vehicle">
+    <field abbrev="type" name="Type" prefix="ST" type="uint8_t" unit="Enumerated">
+      <value abbrev="SIDESCAN" id="0" name="Sidescan" />
+      <value abbrev="ECHOSOUNDER" id="1" name="Echo Sounder" />
+      <value abbrev="MULTIBEAM" id="2" name="Multibeam" />
+    </field>
+    <field abbrev="frequency" name="Frequency" type="uint32_t" unit="Hz">
+      </field>
+    <field abbrev="min_range" name="Minimum Range" type="uint16_t" unit="m">
+      </field>
+    <field abbrev="max_range" name="Maximum Range" type="uint16_t" unit="m">
+      </field>
+    <field abbrev="bits_per_point" name="Bits Per Data Point" type="uint8_t" unit="bit">
+      </field>
+    <field abbrev="scale_factor" name="Scaling Factor" type="fp32_t">
+      </field>
+    <field abbrev="beam_config" message-type="BeamConfig" name="Beam Configuration" type="message-list">
+      </field>
+    <field abbrev="data" name="Data" type="rawdata">
+      </field>
+  </message>
+
+  <message abbrev="Pulse" category="Sensors" flags="periodic" id="277" name="Pulse" source="vehicle,ccu">
+    </message>
+
+  <message abbrev="PulseDetectionControl" category="Sensors" id="278" name="Pulse Detection Control" source="vehicle,ccu">
+    <field abbrev="op" name="Operation" prefix="POP" type="uint8_t" unit="Enumerated">
+      <value abbrev="OFF" id="0" name="Pulse Detection OFF" />
+      <value abbrev="ON" id="1" name="Pulse Detection ON" />
+    </field>
+  </message>
+
+  <message abbrev="FuelLevel" category="Sensors" flags="periodic" id="279" name="Fuel Level" source="vehicle">
+    <field abbrev="value" max="100" min="0" name="Value" type="fp32_t" unit="%">
+      </field>
+    <field abbrev="confidence" max="100" min="0" name="Confidence Level" type="fp32_t" unit="%">
+      </field>
+    <field abbrev="opmodes" name="Operation Modes" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="ServoPosition" category="Sensors" id="281" name="Servo Position" source="vehicle">
+    <field abbrev="id" name="Identifier" type="uint8_t">
+      </field>
+    <field abbrev="value" max="1.5707963267948966" min="-1.5707963267948966" name="Position" type="fp32_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="DeviceState" category="Sensors" id="282" name="Device State" source="vehicle">
+    <field abbrev="x" name="Device Position - X" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="y" name="Device Position - Y" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z" name="Device Position - Z" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="phi" name="Device Rotation - X" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="theta" name="Device Rotation - Y" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="psi" name="Device Rotation - Z" type="fp32_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="BeamConfig" category="Sensors" id="283" name="Beam Configuration" source="vehicle">
+    <field abbrev="beam_width" max="3.141592653589793" min="0" name="Beam Width" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="beam_height" max="3.141592653589793" min="0" name="Beam Height" type="fp32_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="DataSanity" category="Sensors" id="284" name="Data Sanity">
+    <field abbrev="sane" name="Sanity" prefix="DS" type="uint8_t" unit="Enumerated">
+      <value abbrev="SANE" id="0" name="Sane">
+        </value>
+      <value abbrev="NOT_SANE" id="1" name="Not Sane">
+        </value>
+    </field>
+  </message>
+
+  <message abbrev="RhodamineDye" category="Sensors" flags="periodic" id="285" name="Rhodamine Dye" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="PPB">
+      </field>
+  </message>
+
+  <message abbrev="CrudeOil" category="Sensors" flags="periodic" id="286" name="Crude Oil" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="PPB">
+      </field>
+  </message>
+
+  <message abbrev="FineOil" category="Sensors" flags="periodic" id="287" name="Fine Oil" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="PPB">
+      </field>
+  </message>
+
+  <message abbrev="Turbidity" category="Sensors" flags="periodic" id="288" name="Turbidity" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="NTU">
+      </field>
+  </message>
+
+  <message abbrev="Chlorophyll" category="Sensors" flags="periodic" id="289" name="Chlorophyll" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="µg/L">
+      </field>
+  </message>
+
+  <message abbrev="Fluorescein" category="Sensors" flags="periodic" id="290" name="Fluorescein" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="PPB">
+      </field>
+  </message>
+
+  <message abbrev="Phycocyanin" category="Sensors" flags="periodic" id="291" name="Phycocyanin" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="PPB">
+      </field>
+  </message>
+
+  <message abbrev="Phycoerythrin" category="Sensors" flags="periodic" id="292" name="Phycoerythrin" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="PPB">
+      </field>
+  </message>
+
+  <message abbrev="DissolvedOxygen" category="Sensors" flags="periodic" id="295" name="Dissolved Oxygen" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="µM">
+      </field>
+  </message>
+
+  <message abbrev="AirSaturation" category="Sensors" flags="periodic" id="296" name="Air Saturation" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="%">
+      </field>
+  </message>
+
+  <message abbrev="PH" category="Sensors" flags="periodic" id="298" name="pH" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t">
+      </field>
+  </message>
+
+  <message abbrev="Redox" category="Sensors" flags="periodic" id="299" name="Redox Potential" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="V">
+      </field>
+  </message>
+
+  
+  <message abbrev="SetThrusterActuation" category="Actuation" id="301" name="Set Thruster Actuation" source="vehicle">
+    <field abbrev="id" name="Thruster Number" type="uint8_t">
+      </field>
+    <field abbrev="value" max="1" min="-1" name="Actuation Value" type="fp32_t">
+      </field>
+  </message>
+
+  <message abbrev="SetServoPosition" category="Actuation" id="302" name="Set Servo Position" source="vehicle">
+    <field abbrev="id" name="Identifier" type="uint8_t">
+      </field>
+    <field abbrev="value" max="1.5707963267948966" min="-1.5707963267948966" name="Position" type="fp32_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="RemoteActionsRequest" category="Actuation" id="304" name="Remote Actions Request" source="vehicle,ccu">
+    <field abbrev="op" name="operation" prefix="OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="REPORT" id="0" name="Report" />
+      <value abbrev="QUERY" id="1" name="Query" />
+    </field>
+    <field abbrev="actions" name="Actions" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="RemoteActions" category="Actuation" flags="periodic" id="305" name="Remote Actions" source="ccu">
+    <field abbrev="actions" name="Actions" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="ButtonEvent" category="Actuation" id="306" name="Button Event" source="vehicle">
+    <field abbrev="button" name="Button" type="uint8_t">
+      </field>
+    <field abbrev="value" name="Value" type="uint8_t">
+      </field>
+  </message>
+
+  <message abbrev="LcdControl" category="Actuation" id="307" name="LCD Control" source="vehicle">
+    <field abbrev="op" name="Operation" prefix="OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="TURN_OFF" id="0" name="Turn off display" />
+      <value abbrev="TURN_ON" id="1" name="Turn on display" />
+      <value abbrev="CLEAR" id="2" name="Clear display" />
+      <value abbrev="WRITE0" id="3" name="Write Line #0" />
+      <value abbrev="WRITE1" id="4" name="Write Line #1" />
+    </field>
+    <field abbrev="text" name="Text" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="PowerOperation" category="Actuation" id="308" name="Power Operation" source="vehicle">
+    <field abbrev="op" name="Operation" prefix="POP" type="uint8_t" unit="Enumerated">
+      <value abbrev="PWR_DOWN" id="0" name="Power Down">
+        </value>
+      <value abbrev="PWR_DOWN_IP" id="1" name="Power Down in Progress">
+        </value>
+      <value abbrev="PWR_DOWN_ABORTED" id="2" name="Power Down Aborted">
+        </value>
+      <value abbrev="SCHED_PWR_DOWN" id="3" name="Schedule Power Down">
+        </value>
+      <value abbrev="PWR_UP" id="4" name="Power Up">
+        </value>
+      <value abbrev="PWR_UP_IP" id="5" name="Power Up in Progress">
+        </value>
+      <value abbrev="SCHED_PWR_UP" id="6" name="Schedule Power Up">
+        </value>
+    </field>
+    <field abbrev="time_remain" name="Time Remaining" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="sched_time" name="Scheduled Time" type="fp64_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="PowerChannelControl" category="Actuation" id="309" name="Power Channel Control" source="vehicle,ccu">
+    <field abbrev="name" name="Channel Name" type="plaintext">
+      </field>
+    <field abbrev="op" max="6" name="Operation" prefix="PCC_OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="TURN_OFF" id="0" name="Turn Off">
+        </value>
+      <value abbrev="TURN_ON" id="1" name="Turn On">
+        </value>
+      <value abbrev="TOGGLE" id="2" name="Toggle">
+        </value>
+      <value abbrev="SCHED_ON" id="3" name="Schedule Turn On">
+        </value>
+      <value abbrev="SCHED_OFF" id="4" name="Schedule Turn Off">
+        </value>
+      <value abbrev="SCHED_RESET" id="5" name="Reset Schedules">
+        </value>
+      <value abbrev="SAVE" id="6" name="Save Current State">
+        </value>
+    </field>
+    <field abbrev="sched_time" name="Scheduled Time" type="fp64_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="QueryPowerChannelState" category="Actuation" id="310" name="Query Power Channel State" source="vehicle,ccu">
+    </message>
+
+  <message abbrev="PowerChannelState" category="Actuation" id="311" name="Power Channel State" source="vehicle,ccu">
+    <field abbrev="name" name="Name" type="plaintext">
+      </field>
+    <field abbrev="state" name="State" prefix="PCS" type="uint8_t" unit="Enumerated">
+      <value abbrev="OFF" id="0" name="Off">
+        </value>
+      <value abbrev="ON" id="1" name="On">
+        </value>
+    </field>
+  </message>
+
+  <message abbrev="LedBrightness" category="Actuation" id="312" name="LED Brightness" source="vehicle">
+    <field abbrev="name" name="Name" type="plaintext">
+      </field>
+    <field abbrev="value" name="Value" type="uint8_t">
+      </field>
+  </message>
+
+  <message abbrev="QueryLedBrightness" category="Actuation" id="313" name="Query LED Brightness" source="vehicle">
+    <field abbrev="name" name="Name" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="SetLedBrightness" category="Actuation" id="314" name="Set LED Brightness" source="vehicle">
+    <field abbrev="name" name="Name" type="plaintext">
+      </field>
+    <field abbrev="value" name="Value" type="uint8_t">
+      </field>
+  </message>
+
+  
+  <message abbrev="EstimatedState" category="Navigation" flags="periodic" id="350" name="Estimated State" source="vehicle">
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude (WGS-84)" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude (WGS-84)" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="height" name="Height (WGS-84)" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="x" name="Offset north" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="y" name="Offset east" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z" name="Offset down" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="phi" max="3.141592653589793" min="-3.141592653589793" name="Rotation over x axis" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="theta" max="1.57079632679490" min="-1.57079632679490" name="Rotation over y axis" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="psi" max="3.141592653589793" min="-3.141592653589793" name="Rotation over z axis" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="u" name="Body-Fixed xx Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="v" name="Body-Fixed yy Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="w" name="Body-Fixed zz Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="vx" name="Ground Velocity X (North)" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="vy" name="Ground Velocity Y (East)" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="vz" name="Ground Velocity Z (Down)" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="p" max="3.141592653589793" min="-3.141592653589793" name="Angular Velocity in x" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="q" max="3.141592653589793" min="-3.141592653589793" name="Angular Velocity in y" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="r" max="3.141592653589793" min="-3.141592653589793" name="Angular Velocity in z" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="depth" name="Depth" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="alt" name="Altitude" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="EstimatedStreamVelocity" category="Navigation" flags="periodic" id="351" name="Estimated Stream Velocity" source="vehicle">
+    <field abbrev="x" name="X component (North)" type="fp64_t" unit="m/s">
+      </field>
+    <field abbrev="y" name="Y component (East)" type="fp64_t" unit="m/s">
+      </field>
+    <field abbrev="z" name="Z component (Down)" type="fp64_t" unit="m/s">
+      </field>
+  </message>
+
+  <message abbrev="NavigationUncertainty" category="Navigation" id="354" name="Navigation Uncertainty">
+    <field abbrev="x" name="Variance - x Position" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="y" name="Variance - y Position" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z" name="Variance - z Position" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="phi" name="Variance - Roll" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="theta" name="Variance - Pitch" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="psi" name="Variance - Yaw" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="p" name="Variance - Gyro. Roll Rate" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="q" name="Variance - Gyro. Pitch Rate" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="r" name="Variance - Gyro. Yaw Rate" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="u" name="Variance - Body-Fixed xx Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="v" name="Variance - Body-Fixed yy Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="w" name="Variance - Body-Fixed ww Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="bias_psi" name="Variance - Yaw Bias" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="bias_r" name="Variance - Gyro. Yaw Rate Bias" type="fp32_t" unit="rad/s">
+      </field>
+  </message>
+
+  <message abbrev="NavigationData" category="Navigation" id="355" name="Navigation Data">
+    <field abbrev="bias_psi" name="Yaw Bias" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="bias_r" name="Gyro. Yaw Rate Bias" type="fp32_t" unit="rad/s">
+      </field>
+    <field abbrev="cog" name="Course Over Ground" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="cyaw" name="Continuous Yaw" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="lbl_rej_level" name="GPS Rejection Filter Level" type="fp32_t">
+      </field>
+    <field abbrev="gps_rej_level" name="LBL Rejection Filter Level" type="fp32_t">
+      </field>
+    <field abbrev="custom_x" name="Variance - Custom Variable X" type="fp32_t">
+      </field>
+    <field abbrev="custom_y" name="Variance - Custom Variable Y" type="fp32_t">
+      </field>
+    <field abbrev="custom_z" name="Variance - Custom Variable Z" type="fp32_t">
+      </field>
+  </message>
+
+  <message abbrev="GpsFixRejection" category="Navigation" id="356" name="GPS Fix Rejection" source="vehicle">
+    <field abbrev="utc_time" name="UTC Time of Fix" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="reason" name="Reason" prefix="RR" type="uint8_t" unit="Enumerated">
+      <value abbrev="ABOVE_THRESHOLD" id="0" name="Above Threshold">
+        </value>
+      <value abbrev="INVALID" id="1" name="Invalid Fix">
+        </value>
+      <value abbrev="ABOVE_MAX_HDOP" id="2" name="Above Maximum HDOP">
+        </value>
+      <value abbrev="ABOVE_MAX_HACC" id="3" name="Above Maximum HACC">
+        </value>
+      <value abbrev="LOST_VAL_BIT" id="4" name="Lost Validity Bit">
+        </value>
+    </field>
+  </message>
+
+  <message abbrev="LblRangeAcceptance" category="Navigation" id="357" name="LBL Range Acceptance" source="vehicle">
+    <field abbrev="id" name="Beacon Identification Number" type="uint8_t">
+      </field>
+    <field abbrev="range" name="Range" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="acceptance" name="Acceptance" prefix="RR" type="uint8_t" unit="Enumerated">
+      <value abbrev="ACCEPTED" id="0" name="Accepted">
+        </value>
+      <value abbrev="ABOVE_THRESHOLD" id="1" name="Rejected - Above Threshold">
+        </value>
+      <value abbrev="SINGULAR" id="2" name="Rejected - Singular Point">
+        </value>
+      <value abbrev="NO_INFO" id="3" name="Rejected - Not Enough Information">
+        </value>
+      <value abbrev="AT_SURFACE" id="4" name="Rejected - Vehicle At Surface">
+        </value>
+    </field>
+  </message>
+
+  <message abbrev="DvlRejection" category="Navigation" id="358" name="DVL Rejection" source="vehicle">
+    <field abbrev="type" name="Type of velocity" prefix="TYPE" type="uint8_t" unit="Bitfield">
+      <value abbrev="GV" id="0x01" name="Ground velocity" />
+      <value abbrev="WV" id="0x02" name="Water velocity" />
+    </field>
+    <field abbrev="reason" name="Reason" prefix="RR" type="uint8_t" unit="Enumerated">
+      <value abbrev="INNOV_THRESHOLD_X" id="0" name="Innovation Threshold - X">
+        </value>
+      <value abbrev="INNOV_THRESHOLD_Y" id="1" name="Innovation Threshold - Y">
+        </value>
+      <value abbrev="ABS_THRESHOLD_X" id="2" name="Absolute Threshold - X">
+        </value>
+      <value abbrev="ABS_THRESHOLD_Y" id="3" name="Absolute Threshold - Y">
+        </value>
+    </field>
+    <field abbrev="value" name="Value" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="timestep" name="Timestep" type="fp32_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="LblEstimate" category="Navigation" id="360" name="LBL Beacon Position Estimate">
+    <field abbrev="beacon" message-type="LblBeacon" name="LBL Beacon Configuration" type="message">
+      </field>
+    <field abbrev="x" name="North position" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="y" name="East position" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="var_x" name="North position variance" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="var_y" name="East position variance" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="distance" name="Distance" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="AlignmentState" category="Navigation" id="361" name="Alignment State" source="vehicle">
+    <field abbrev="state" name="State" prefix="AS" type="uint8_t" unit="Enumerated">
+      <value abbrev="NOT_ALIGNED" id="0" name="Not Aligned" />
+      <value abbrev="ALIGNED" id="1" name="Aligned" />
+      <value abbrev="NOT_SUPPORTED" id="2" name="Not Supported" />
+      <value abbrev="ALIGNING" id="3" name="Aligning" />
+      <value abbrev="WRONG_MEDIUM" id="4" name="Wrong Medium" />
+      <value abbrev="COARSE_ALIGNMENT" id="5" name="Coarse Alignment" />
+      <value abbrev="FINE_ALIGNMENT" id="6" name="Fine Alignment" />
+      <value abbrev="SYSTEM_READY" id="7" name="System Ready" />
+    </field>
+  </message>
+
+  
+  <message abbrev="DesiredHeading" category="Guidance" id="400" name="Desired Heading" source="vehicle">
+    <field abbrev="value" name="Value" type="fp64_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="DesiredZ" category="Guidance" id="401" name="Desired Z" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+  </message>
+
+  <message abbrev="DesiredSpeed" category="Guidance" id="402" name="Desired Speed" source="vehicle">
+    <field abbrev="value" name="Value" type="fp64_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated">
+      </field>
+  </message>
+
+  <message abbrev="DesiredRoll" category="Guidance" id="403" name="Desired Roll" source="vehicle">
+    <field abbrev="value" name="Value" type="fp64_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="DesiredPitch" category="Guidance" id="404" name="Desired Pitch" source="vehicle">
+    <field abbrev="value" name="Value" type="fp64_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="DesiredPath" category="Guidance" id="406" name="Desired Path" source="vehicle">
+    <field abbrev="path_ref" name="Path Reference" type="uint32_t">
+      </field>
+    <field abbrev="start_lat" max="1.5707963267948966" min="-1.5707963267948966" name="Start Point -- Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="start_lon" max="3.141592653589793" min="-3.141592653589793" name="Start Point -- WGS-84 Longitude" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="start_z" name="Start Point -- Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="start_z_units" enum-def="ZUnits" name="Start Point -- Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="end_lat" max="1.5707963267948966" min="-1.5707963267948966" name="End Point -- WGS84 Latitude" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="end_lon" max="3.141592653589793" min="-3.141592653589793" name="End Point -- WGS-84 Longitude" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="end_z" name="End Point -- Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="end_z_units" enum-def="ZUnits" name="End Point -- Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="lradius" name="Loiter -- Radius" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="flags" name="Flags" prefix="FL" type="uint8_t" unit="Bitfield">
+      <value abbrev="START" id="0x01" name="Start Point">
+        </value>
+      <value abbrev="DIRECT" id="0x02" name="Direct">
+        </value>
+      <value abbrev="NO_Z" id="0x04" name="No Altitude/Depth control">
+        </value>
+      <value abbrev="3DTRACK" id="0x08" name="3D Tracking">
+        </value>
+      <value abbrev="CCLOCKW" id="0x10" name="Counter-Clockwise loiter">
+        </value>
+      <value abbrev="LOITER_CURR" id="0x20" name="Loiter from current position">
+        </value>
+      <value abbrev="TAKEOFF" id="0x40" name="Takeoff">
+        </value>
+      <value abbrev="LAND" id="0x80" name="Land">
+        </value>
+    </field>
+  </message>
+
+  <message abbrev="DesiredControl" category="Guidance" id="407" name="Desired Control" source="vehicle">
+    <field abbrev="x" name="Force along the x axis" type="fp64_t" unit="N">
+      </field>
+    <field abbrev="y" name="Force along the y axis" type="fp64_t" unit="N">
+      </field>
+    <field abbrev="z" name="Force along the z axis" type="fp64_t" unit="N">
+      </field>
+    <field abbrev="k" name="Torque about the x axis" type="fp64_t" unit="Nm">
+      </field>
+    <field abbrev="m" name="Torque about the y axis" type="fp64_t" unit="Nm">
+      </field>
+    <field abbrev="n" name="Torque about the z axis" type="fp64_t" unit="Nm">
+      </field>
+    <field abbrev="flags" name="Flags" prefix="FL" type="uint8_t" unit="Bitfield">
+      <value abbrev="X" id="0x01" name="Value of X is meaningful">
+        </value>
+      <value abbrev="Y" id="0x02" name="Value of Y is meaningful">
+        </value>
+      <value abbrev="Z" id="0x04" name="Value of Z is meaningful">
+        </value>
+      <value abbrev="K" id="0x08" name="Value of K is meaningful">
+        </value>
+      <value abbrev="M" id="0x10" name="Value of M is meaningful">
+        </value>
+      <value abbrev="N" id="0x20" name="Value of N is meaningful">
+        </value>
+    </field>
+  </message>
+
+  <message abbrev="DesiredHeadingRate" category="Guidance" id="408" name="Desired Heading Rate" source="vehicle">
+    <field abbrev="value" name="Value" type="fp64_t" unit="rad/s">
+      </field>
+  </message>
+
+  <message abbrev="PathControlState" category="Guidance" id="410" name="Path Control State" source="vehicle">
+    <field abbrev="path_ref" name="Path Reference" type="uint32_t">
+      </field>
+    <field abbrev="start_lat" max="1.5707963267948966" min="-1.5707963267948966" name="Start Point -- Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="start_lon" max="3.141592653589793" min="-3.141592653589793" name="Start Point -- WGS-84 Longitude" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="start_z" name="Start Point -- Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="start_z_units" enum-def="ZUnits" name="Start Point -- Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="end_lat" max="1.5707963267948966" min="-1.5707963267948966" name="End Point -- Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="end_lon" max="3.141592653589793" min="-3.141592653589793" name="End Point -- WGS-84 Longitude" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="end_z" name="End Point -- Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="end_z_units" enum-def="ZUnits" name="End Point -- Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="lradius" name="Loiter -- Radius" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="flags" name="Flags" prefix="FL" type="uint8_t" unit="Bitfield">
+      <value abbrev="NEAR" id="0x01" name="Near Endpoint">
+        </value>
+      <value abbrev="LOITERING" id="0x02" name="Loitering">
+        </value>
+      <value abbrev="NO_Z" id="0x04" name="No Altitude/Depth control">
+        </value>
+      <value abbrev="3DTRACK" id="0x08" name="3D Tracking">
+        </value>
+      <value abbrev="CCLOCKW" id="0x10" name="Counter-Clockwise loiter">
+        </value>
+    </field>
+    <field abbrev="x" name="Along Track Position" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="y" name="Cross Track Position" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z" name="Vertical Track Position" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="vx" name="Along Track Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="vy" name="Cross Track Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="vz" name="Vertical Track Velocity" type="fp32_t" unit="m/s">
+      </field>
+    <field abbrev="course_error" name="Course Error" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="eta" name="Estimated Time to Arrival (ETA)" type="uint16_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="AllocatedControlTorques" category="Guidance" id="411" name="Allocated Control Torques" source="vehicle">
+    <field abbrev="k" name="Torque about the x axis" type="fp64_t" unit="Nm">
+      </field>
+    <field abbrev="m" name="Torque about the y axis" type="fp64_t" unit="Nm">
+      </field>
+    <field abbrev="n" name="Torque about the x axis" type="fp64_t" unit="Nm">
+      </field>
+  </message>
+
+  <message abbrev="ControlParcel" category="Guidance" id="412" name="Control Parcel">
+    <field abbrev="p" name="Proportional Parcel" type="fp32_t">
+      </field>
+    <field abbrev="i" name="Integrative Parcel" type="fp32_t">
+      </field>
+    <field abbrev="d" name="Derivative Parcel" type="fp32_t">
+      </field>
+    <field abbrev="a" name="Anti-Windup Parcel" type="fp32_t">
+      </field>
+  </message>
+
+  <message abbrev="Brake" category="Guidance" id="413" name="Brake">
+    <field abbrev="op" name="Operation" prefix="OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="STOP" id="0" name="Stop Braking">
+        </value>
+      <value abbrev="START" id="1" name="Start Braking">
+        </value>
+      <value abbrev="REVERT" id="2" name="Revert Actuation">
+        </value>
+    </field>
+  </message>
+
+  
+  <message abbrev="Goto" category="Maneuvering" id="450" name="Goto Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="roll" max="6.283185307179586" min="-1" name="Roll" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="pitch" max="6.283185307179586" min="-1" name="Pitch" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="yaw" max="6.283185307179586" min="-1" name="Yaw" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="PopUp" category="Maneuvering" id="451" name="PopUp Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="duration" name="Duration" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="radius" max="100000" min="1" name="Radius" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="flags" name="Flags" prefix="FLG" type="uint8_t" unit="Bitfield">
+      <value abbrev="CURR_POS" id="0x01" name="Start from current position">
+        </value>
+      <value abbrev="WAIT_AT_SURFACE" id="0x02" name="Wait at surface">
+        </value>
+      <value abbrev="STATION_KEEP" id="0x04" name="Station keeping">
+        </value>
+    </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="Teleoperation" category="Maneuvering" id="452" name="Teleoperation Maneuver" source="ccu">
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="Loiter" category="Maneuvering" id="453" name="Loiter Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="duration" name="Duration" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="type" max="4" name="Loiter Type" prefix="LT" type="uint8_t" unit="Enumerated">
+      <value abbrev="DEFAULT" id="0" name="Default" />
+      <value abbrev="CIRCULAR" id="1" name="Circular" />
+      <value abbrev="RACETRACK" id="2" name="Race track" />
+      <value abbrev="EIGHT" id="3" name="Figure 8" />
+      <value abbrev="HOVER" id="4" name="Hover" />
+    </field>
+    <field abbrev="radius" max="100000" min="1" name="Radius" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="length" max="100000" min="1" name="Length" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="bearing" max="6.283185307179586" min="0" name="Bearing" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="direction" max="3" name="Direction" prefix="LD" type="uint8_t" unit="Enumerated">
+      <value abbrev="VDEP" id="0" name="Vehicle Dependent" />
+      <value abbrev="CLOCKW" id="1" name="Clockwise" />
+      <value abbrev="CCLOCKW" id="2" name="Counter Clockwise" />
+      <value abbrev="IWINDCURR" id="3" name="Into the wind/current" />
+    </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="IdleManeuver" category="Maneuvering" id="454" name="Idle Maneuver" source="">
+    <field abbrev="duration" name="Duration" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="Rows" category="Maneuvering" id="456" name="Rows Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="bearing" max="6.283185307179586" min="0" name="Bearing" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="cross_angle" max="1.047197551197" min="-1.047197551197" name="Cross Angle" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="width" min="0" name="Width" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="length" min="0" name="Length" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="hstep" min="0" name="Horizontal Step" type="fp32_t" unit="m" value="30">
+      </field>
+    <field abbrev="coff" name="Curve Offset" type="uint8_t" unit="m">
+      </field>
+    <field abbrev="alternation" max="100" name="Alternation Parameter" type="uint8_t" unit="%" value="50">
+      </field>
+    <field abbrev="flags" name="Flags" prefix="FLG" type="uint8_t" unit="Bitfield">
+      <value abbrev="SQUARE_CURVE" id="0x0001" name="Square Curve" />
+      <value abbrev="CURVE_RIGHT" id="0x0002" name="First Curve Right" />
+    </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="FollowPath" category="Maneuvering" id="457" name="Follow Path Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="points" message-type="PathPoint" name="Path Points" type="message-list">
+      </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="PathPoint" category="Maneuvering" id="458" name="Path Point">
+    <field abbrev="x" name="North Offset (m)" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="y" name="East Offset (m)" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z" name="Down Offset (m)" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="YoYo" category="Maneuvering" id="459" name="Yo-Yo Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="amplitude" name="Amplitude" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="pitch" max="0.78539816" min="0" name="Pitch Angle" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="TeleoperationDone" category="Maneuvering" id="460" name="Teleoperation Done" source="ccu">
+    </message>
+
+  <message abbrev="StationKeeping" category="Maneuvering" id="461" name="Station Keeping" source="ccu">
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="radius" name="Radius" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="duration" name="Duration" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated">
+      </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="Elevator" category="Maneuvering" id="462" name="Elevator Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="flags" name="Flags" prefix="FLG" type="uint8_t" unit="Bitfield">
+      <value abbrev="CURR_POS" id="0x01" name="Start from current position">
+        </value>
+    </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="start_z" name="Start Point -- Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="start_z_units" enum-def="ZUnits" name="Start Point -- Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="end_z" name="End Point -- Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="end_z_units" enum-def="ZUnits" name="End Point -- Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="radius" min="0" name="Radius" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="FollowTrajectory" category="Maneuvering" id="463" name="Follow Trajectory" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="points" message-type="TrajectoryPoint" name="Trajectory Points" type="message-list">
+      </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="TrajectoryPoint" category="Maneuvering" id="464" name="Trajectory Point">
+    <field abbrev="x" name="North Offset (m)" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="y" name="East Offset (m)" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z" name="Down Offset (m)" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="t" name="Time Offset (s)" type="fp32_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="CustomManeuver" category="Maneuvering" id="465" name="Custom Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="name" name="Maneuver Name" type="plaintext">
+      </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="StopManeuver" category="Maneuvering" id="468" name="Stop Maneuver" source="vehicle">
+    </message>
+
+  <message abbrev="RegisterManeuver" category="Maneuvering" id="469" name="Register Maneuver" source="vehicle">
+    <field abbrev="mid" name="Maneuver ID" type="uint16_t">
+      </field>
+  </message>
+
+  <message abbrev="ManeuverControlState" category="Maneuvering" id="470" name="Maneuver Control State" source="vehicle">
+    <field abbrev="state" name="State" prefix="MCS" type="uint8_t" unit="Enumerated">
+      <value abbrev="EXECUTING" id="0" name="Maneuver in progress">
+        </value>
+      <value abbrev="DONE" id="1" name="Maneuver completed">
+        </value>
+      <value abbrev="ERROR" id="2" name="Maneuver error">
+        </value>
+      <value abbrev="STOPPED" id="3" name="Maneuver stopped">
+        </value>
+    </field>
+    <field abbrev="eta" name="Completion Time" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="info" name="Info" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="PolygonVertex" category="Maneuvering" id="474" name="Polygon Vertex">
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="CompassCalibration" category="Maneuvering" id="475" name="Compass Calibration Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="pitch" max="1.5707963267948966" min="-1.5707963267948966" name="Pitch" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="amplitude" name="Amplitude" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="duration" name="Duration" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="radius" max="100000" min="1" name="Radius" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="direction" max="3" name="Direction" prefix="LD" type="uint8_t" unit="Enumerated">
+      <value abbrev="VDEP" id="0" name="Vehicle Dependent" />
+      <value abbrev="CLOCKW" id="1" name="Clockwise" />
+      <value abbrev="CCLOCKW" id="2" name="Counter Clockwise" />
+      <value abbrev="IWINDCURR" id="3" name="Into the wind/current" />
+    </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="FollowReference" category="Maneuvering" id="478" name="Follow Reference Maneuver" source="ccu">
+    <field abbrev="control_src" name="Controlling Source" type="uint16_t">
+      </field>
+    <field abbrev="control_ent" name="Controlling Entity" type="uint8_t">
+      </field>
+    <field abbrev="timeout" name="Reference Update Timeout" type="fp32_t">
+      </field>
+    <field abbrev="loiter_radius" name="Loiter Radius" type="fp32_t">
+      </field>
+    <field abbrev="altitude_interval" name="Altitude Interval" type="fp32_t">
+      </field>
+  </message>
+
+  <message abbrev="Reference" category="Maneuvering" id="479" name="Reference To Follow" source="ccu,vehicle">
+    <field abbrev="flags" name="Flags" prefix="FLAG" type="uint8_t" unit="Bitfield">
+      <value abbrev="LOCATION" id="0x01" name="Use Location Reference" />
+      <value abbrev="SPEED" id="0x02" name="Use Speed Reference" />
+      <value abbrev="Z" id="0x04" name="Use Z Reference" />
+      <value abbrev="RADIUS" id="0x08" name="Use Radius Reference" />
+      <value abbrev="START_POINT" id="0x10" name="Use this Reference as Start Position for PathControler" />
+      <value abbrev="DIRECT" id="0x20" name="Use Current Position as Start Position for PathControler" />
+      <value abbrev="MANDONE" id="0x80" name="Flag Maneuver Completion" />
+    </field>
+    <field abbrev="speed" message-type="DesiredSpeed" name="Speed Reference" type="message" />
+    <field abbrev="z" message-type="DesiredZ" name="Z Reference" type="message" />
+    <field abbrev="lat" name="Latitude Reference" type="fp64_t" />
+    <field abbrev="lon" name="Longitude Reference" type="fp64_t" />
+    <field abbrev="radius" name="Radius" type="fp32_t" />
+  </message>
+
+  <message abbrev="FollowRefState" category="Maneuvering" id="480" name="Follow Reference State" source="vehicle">
+    <field abbrev="control_src" name="Controlling Source" type="uint16_t">
+      </field>
+    <field abbrev="control_ent" name="Controlling Entity" type="uint8_t">
+      </field>
+    <field abbrev="reference" message-type="Reference" name="Reference" type="message">
+      </field>
+    <field abbrev="state" name="State" prefix="FR" type="uint8_t" unit="Enumerated">
+      <value abbrev="WAIT" id="1" name="Waiting for first reference" />
+      <value abbrev="GOTO" id="2" name="Going towards received reference" />
+      <value abbrev="LOITER" id="3" name="Loitering after arriving at the reference" />
+      <value abbrev="HOVER" id="4" name="Hovering after arriving at the reference" />
+      <value abbrev="ELEVATOR" id="5" name="Moving in z after arriving at the target cylinder" />
+      <value abbrev="TIMEOUT" id="6" name="Controlling system timed out" />
+    </field>
+    <field abbrev="proximity" name="Proximity" prefix="PROX" type="uint8_t" unit="Bitfield">
+      <value abbrev="FAR" id="0x01" name="Far from the destination" />
+      <value abbrev="XY_NEAR" id="0x02" name="Near in the horizontal plane" />
+      <value abbrev="Z_NEAR" id="0x04" name="Near in the vertical plane" />
+      <value abbrev="XY_UNREACHABLE" id="0x08" name="Unreachable in the horizontal plane" />
+      <value abbrev="Z_UNREACHABLE" id="0x10" name="Unreachable in the vertical plane" />
+    </field>
+  </message>
+
+  <message abbrev="Dislodge" category="Maneuvering" id="483" name="Dislodge Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="rpm" name="RPM" type="fp32_t">
+      </field>
+    <field abbrev="direction" name="Direction" prefix="DIR" type="uint8_t" unit="Enumerated">
+      <value abbrev="AUTO" id="0" name="Let the vehicle decide" />
+      <value abbrev="FORWARD" id="1" name="Attempt to move forward" />
+      <value abbrev="BACKWARD" id="2" name="Attempt to move backward" />
+    </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="Launch" category="Maneuvering" id="485" name="Launch Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="Alignment" category="Maneuvering" id="495" name="Alignment Maneuver" source="ccu">
+      <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="FollowCommand" category="Maneuvering" id="496" name="Follow Command Maneuver" source="ccu">
+    <field abbrev="control_src" name="Controlling Source" type="uint16_t">
+      </field>
+    <field abbrev="control_ent" name="Controlling Entity" type="uint8_t">
+      </field>
+    <field abbrev="timeout" name="Reference Update Timeout" type="fp32_t">
+      </field>
+  </message>
+
+  <message abbrev="Command" category="Maneuvering" id="497" name="Command To Follow" source="ccu,vehicle">
+    <field abbrev="flags" name="Flags" prefix="FLAG" type="uint8_t" unit="Bitfield">
+      <value abbrev="SPEED_METERS_PS" id="0x01" name="Use Speed Reference in meters per second">
+	</value>
+      <value abbrev="SPEED_RPM" id="0x02" name="Use Speed Reference in revolutions per minute">
+	</value>
+      <value abbrev="DEPTH" id="0x04" name="Use Z Reference as depth">
+	</value>
+      <value abbrev="ALTITUDE" id="0x08" name="Use Z Reference as altitude">
+	</value>
+      <value abbrev="HEADING" id="0x10" name="Use Heading Reference">
+	</value>
+      <value abbrev="HEADING_RATE" id="0x20" name="Use Heading Rate Reference">
+	</value>
+      <value abbrev="MANDONE" id="0x80" name="Flag Maneuver Completion">
+	</value>
+    </field>
+    <field abbrev="speed" name="Speed Reference" type="fp32_t">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="heading" name="Heading Reference" type="fp32_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="FollowCommandState" category="Maneuvering" id="498" name="Follow Command State" source="vehicle">
+    <field abbrev="control_src" name="Controlling Source" type="uint16_t">
+      </field>
+    <field abbrev="control_ent" name="Controlling Entity" type="uint8_t">
+      </field>
+    <field abbrev="command" message-type="Command" name="Command" type="message">
+      </field>
+    <field abbrev="state" name="State" prefix="FC" type="uint8_t" unit="Enumerated">
+      <value abbrev="WAIT" id="1" name="Waiting for first command">
+	</value>
+      <value abbrev="MOVING" id="2" name="Moving towards received command">
+	</value>
+      <value abbrev="STOPPED" id="3" name="Speed command is zero">
+	</value>
+      <value abbrev="BAD_COMMAND" id="4" name="Command is out of safe bounds">
+	</value>
+      <value abbrev="TIMEOUT" id="5" name="Controlling system timed out">
+	</value>
+    </field>
+  </message>
+
+  <message abbrev="Magnetometer" category="Maneuvering" id="499" name="Magnetometer Maneuver" source="ccu">
+    <field abbrev="timeout" name="Timeout" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="speed" name="Speed" type="fp32_t">
+      </field>
+    <field abbrev="speed_units" enum-def="SpeedUnits" name="Speed Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="bearing" max="6.283185307179586" min="0" name="Bearing" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="width" min="50" name="Width" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="direction" max="1" name="Direction" prefix="MD" type="uint8_t" unit="Enumerated">
+      <value abbrev="CLOCKW_FIRST" id="0" name="Clockwise First" />
+      <value abbrev="CCLOCKW_FIRST" id="1" name="Counter Clockwise First" />
+    </field>
+    <field abbrev="custom" name="Custom settings for maneuver" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  
+  <message abbrev="VehicleState" category="Vehicle Supervision" id="500" name="Vehicle State" source="vehicle">
+    <field abbrev="op_mode" name="Operation Mode" prefix="VS" type="uint8_t" unit="Enumerated">
+      <value abbrev="SERVICE" id="0" name="Service">
+        </value>
+      <value abbrev="CALIBRATION" id="1" name="Calibration">
+        </value>
+      <value abbrev="ERROR" id="2" name="Error">
+        </value>
+      <value abbrev="MANEUVER" id="3" name="Maneuver">
+        </value>
+      <value abbrev="EXTERNAL" id="4" name="External Control">
+        </value>
+      <value abbrev="BOOT" id="5" name="Boot">
+        </value>
+    </field>
+    <field abbrev="error_count" name="Errors -- Count" type="uint8_t">
+      </field>
+    <field abbrev="error_ents" name="Errors -- Entities" type="plaintext">
+      </field>
+    <field abbrev="maneuver_type" name="Maneuver -- Type" type="uint16_t">
+      </field>
+    <field abbrev="maneuver_stime" name="Maneuver -- Start Time" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="maneuver_eta" name="Maneuver -- ETA" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="control_loops" bitfield-def="CLoopsMask" name="Control Loops" type="uint32_t" unit="Bitfield">
+      </field>
+    <field abbrev="flags" name="Flags" prefix="VFLG" type="uint8_t" unit="Bitfield">
+      <value abbrev="MANEUVER_DONE" id="0x01" name="Maneuver Done" />
+    </field>
+    <field abbrev="last_error" name="Last Error -- Description" type="plaintext">
+      </field>
+    <field abbrev="last_error_time" name="Last Error -- Time" type="fp64_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="VehicleCommand" category="Vehicle Supervision" id="501" name="Vehicle Command" source="ccu,vehicle">
+    <field abbrev="type" name="Type" prefix="VC" type="uint8_t" unit="Enumerated">
+      <value abbrev="REQUEST" id="0" name="Request" />
+      <value abbrev="SUCCESS" id="1" name="Reply -- Success" />
+      <value abbrev="IN_PROGRESS" id="2" name="Reply -- In Progress" />
+      <value abbrev="FAILURE" id="3" name="Reply -- Failure" />
+    </field>
+    <field abbrev="request_id" name="Request ID" type="uint16_t">
+      </field>
+    <field abbrev="command" name="Command" prefix="VC" type="uint8_t" unit="Enumerated">
+      <value abbrev="EXEC_MANEUVER" id="0" name="Execute Maneuver">
+        </value>
+      <value abbrev="STOP_MANEUVER" id="1" name="Stop Maneuver">
+        </value>
+      <value abbrev="START_CALIBRATION" id="2" name="Start Calibration">
+        </value>
+      <value abbrev="STOP_CALIBRATION" id="3" name="Stop Calibration">
+        </value>
+    </field>
+    <field abbrev="maneuver" message-type="Maneuver" name="Maneuver" type="message">
+      </field>
+    <field abbrev="calib_time" name="Calibration Time" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="info" name="Info" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="MonitorEntityState" category="Vehicle Supervision" id="502" name="Monitor Entity State" source="vehicle">
+    <field abbrev="command" name="Command" prefix="MES" type="uint8_t" unit="Enumerated">
+      <value abbrev="RESET" id="0" name="Reset to defaults" />
+      <value abbrev="ENABLE" id="1" name="Enable Monitoring" />
+      <value abbrev="DISABLE" id="2" name="Disable Monitoring" />
+      <value abbrev="ENABLE_EXCLUSIVE" id="3" name="Enable Monitoring (exclusive - disables all others)" />
+      <value abbrev="STATUS" id="4" name="Status Report" />
+    </field>
+    <field abbrev="entities" name="Entity Names" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="EntityMonitoringState" category="Vehicle Supervision" id="503" name="Entity Monitoring State" source="vehicle">
+    <field abbrev="mcount" name="Entities monitored - Count" type="uint8_t">
+      </field>
+    <field abbrev="mnames" name="Entities monitored - Names" type="plaintext">
+      </field>
+    <field abbrev="ecount" name="Entities with errors - Count" type="uint8_t">
+      </field>
+    <field abbrev="enames" name="Entities with errors - Names" type="plaintext">
+      </field>
+    <field abbrev="ccount" name="Entities with critical errors - Count" type="uint8_t">
+      </field>
+    <field abbrev="cnames" name="Entities with critical errors - Names" type="plaintext">
+      </field>
+    <field abbrev="last_error" name="Last Error -- Description" type="plaintext">
+      </field>
+    <field abbrev="last_error_time" name="Last Error -- Time" type="fp64_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="OperationalLimits" category="Vehicle Supervision" id="504" name="Operational Limits" source="ccu,vehicle">
+    <field abbrev="mask" bitfield-def="OpLimitsMask" name="Field Indicator Mask" type="uint8_t" unit="Bitfield" />
+    <field abbrev="max_depth" min="0" name="Maximum Depth" type="fp32_t" unit="m" />
+    <field abbrev="min_altitude" min="0" name="Minimum Altitude" type="fp32_t" unit="m" />
+    <field abbrev="max_altitude" min="0" name="Maximum Altitude" type="fp32_t" unit="m" />
+    <field abbrev="min_speed" min="0" name="Minimum Speed" type="fp32_t" unit="m/s" />
+    <field abbrev="max_speed" min="0" name="Maximum Speed" type="fp32_t" unit="m/s" />
+    <field abbrev="max_vrate" min="0" name="Maximum Vertical Rate" type="fp32_t" unit="m/s" />
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Area -- WGS-84 Latitude" type="fp64_t" unit="rad" />
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Area -- WGS-84 Longitude" type="fp64_t" unit="rad" />
+    <field abbrev="orientation" name="Area -- Orientation" type="fp32_t" unit="rad" />
+    <field abbrev="width" name="Area -- Width" type="fp32_t" unit="m" />
+    <field abbrev="length" name="Area -- Length" type="fp32_t" unit="m" />
+  </message>
+
+  <message abbrev="GetOperationalLimits" category="Vehicle Supervision" id="505" name="Get Operational Limits" source="ccu">
+    </message>
+
+  <message abbrev="Calibration" category="Vehicle Supervision" id="506" name="Calibration" source="vehicle">
+    <field abbrev="duration" name="Duration" type="uint16_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="ControlLoops" category="Vehicle Supervision" id="507" name="Control Loops" source="vehicle">
+    <field abbrev="enable" name="Enable" prefix="CL" type="uint8_t" unit="Enumerated">
+      <value abbrev="DISABLE" id="0" name="Disable" />
+      <value abbrev="ENABLE" id="1" name="Enable" />
+    </field>
+    <field abbrev="mask" bitfield-def="CLoopsMask" name="Control Loop Mask" type="uint32_t" unit="Bitfield">
+      </field>
+    <field abbrev="scope_ref" name="Scope Time Reference" type="uint32_t">
+      </field>
+  </message>
+
+  <message abbrev="VehicleMedium" category="Vehicle Supervision" id="508" name="Vehicle Medium" source="vehicle">
+    <field abbrev="medium" name="Medium" prefix="VM" type="uint8_t" unit="Enumerated">
+      <value abbrev="GROUND" id="0" name="Ground">
+        </value>
+      <value abbrev="AIR" id="1" name="Air">
+        </value>
+      <value abbrev="WATER" id="2" name="Water">
+        </value>
+      <value abbrev="UNDERWATER" id="3" name="Underwater">
+        </value>
+      <value abbrev="UNKNOWN" id="4" name="Unknown">
+        </value>
+    </field>
+  </message>
+
+  <message abbrev="Collision" category="Vehicle Supervision" id="509" name="Collision" source="vehicle">
+    <field abbrev="value" name="Collision value" type="fp32_t" unit="m/s/s">
+      </field>
+    <field abbrev="type" name="Type" prefix="CD" type="uint8_t" unit="Bitfield">
+      <value abbrev="X" id="0x01" name="X-axis">
+        </value>
+      <value abbrev="Y" id="0x02" name="Y-axis">
+        </value>
+      <value abbrev="Z" id="0x04" name="Z-axis">
+        </value>
+      <value abbrev="IMPACT" id="0x08" name="Impact">
+        </value>
+    </field>
+  </message>
+
+  <message abbrev="ReportControl" category="Vehicle Supervision" id="513" name="Report Control" source="ccu,vehicle">
+    <field abbrev="op" name="Operation" prefix="OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="REQUEST_START" id="0" name="Request Start of Reports">
+        </value>
+      <value abbrev="STARTED" id="1" name="Report Started">
+        </value>
+      <value abbrev="REQUEST_STOP" id="2" name="Request Stop of Reports">
+        </value>
+      <value abbrev="STOPPED" id="3" name="Report Stopped">
+        </value>
+      <value abbrev="REQUEST_REPORT" id="4" name="Request Single Reports">
+        </value>
+      <value abbrev="REPORT_SENT" id="5" name="Single Report Sent">
+        </value>
+    </field>
+    <field abbrev="comm_interface" name="Communication Interface" prefix="CI" type="uint8_t" unit="Bitfield">
+      <value abbrev="ACOUSTIC" id="0x01" name="Acoustic">
+        </value>
+      <value abbrev="SATELLITE" id="0x02" name="Satellite">
+        </value>
+      <value abbrev="GSM" id="0x04" name="GSM">
+        </value>
+      <value abbrev="MOBILE" id="0x08" name="Mobile">
+        </value>
+    </field>
+    <field abbrev="period" name="Period" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="sys_dst" name="Destination System" type="plaintext">
+      </field>
+  </message>
+
+  
+  <message abbrev="Abort" category="Plan Supervision" id="550" name="Abort" source="ccu">
+    </message>
+
+  <message abbrev="PlanSpecification" category="Plan Supervision" id="551" name="Plan Specification" source="ccu,vehicle">
+    <field abbrev="plan_id" name="Plan ID" type="plaintext">
+      </field>
+    <field abbrev="description" name="Plan Description" type="plaintext">
+      </field>
+    <field abbrev="vnamespace" name="Namespace" type="plaintext">
+      </field>
+    <field abbrev="variables" message-type="PlanVariable" name="Plan Variables" type="message-list">
+      </field>
+    <field abbrev="start_man_id" name="Starting maneuver" type="plaintext">
+      </field>
+    <field abbrev="maneuvers" message-type="PlanManeuver" name="Maneuvers" type="message-list">
+      </field>
+    <field abbrev="transitions" message-type="PlanTransition" name="Transitions" type="message-list">
+      </field>
+    <field abbrev="start_actions" name="Start Actions" type="message-list">
+      </field>
+    <field abbrev="end_actions" name="End Actions" type="message-list">
+      </field>
+  </message>
+
+  <message abbrev="PlanManeuver" category="Plan Supervision" id="552" name="Plan Maneuver" source="ccu">
+    <field abbrev="maneuver_id" name="Maneuver ID" type="plaintext">
+      </field>
+    <field abbrev="data" message-type="Maneuver" name="Maneuver Specification" type="message">
+      </field>
+    <field abbrev="start_actions" name="Start Actions" type="message-list">
+      </field>
+    <field abbrev="end_actions" name="End Actions" type="message-list">
+      </field>
+  </message>
+
+  <message abbrev="PlanTransition" category="Plan Supervision" id="553" name="Plan Transition" source="ccu">
+    <field abbrev="source_man" name="Source" type="plaintext">
+      </field>
+    <field abbrev="dest_man" name="Destination Maneuver Name" type="plaintext">
+      </field>
+    <field abbrev="conditions" name="Transition conditions" type="plaintext">
+      </field>
+    <field abbrev="actions" name="Transition actions" type="message-list">
+      </field>
+  </message>
+
+  <message abbrev="PlanDB" category="Plan Supervision" id="556" name="Plan DB">
+    <field abbrev="type" name="Type" prefix="DBT" type="uint8_t" unit="Enumerated">
+      <value abbrev="REQUEST" id="0" name="Request" />
+      <value abbrev="SUCCESS" id="1" name="Reply -- Success" />
+      <value abbrev="FAILURE" id="2" name="Reply -- Failure" />
+      <value abbrev="IN_PROGRESS" id="3" name="Reply -- In Progress" />
+    </field>
+    <field abbrev="op" name="Operation" prefix="DBOP" type="uint8_t" unit="Enumerated">
+      <value abbrev="SET" id="0" name="Set Plan">
+        </value>
+      <value abbrev="DEL" id="1" name="Delete Plan">
+        </value>
+      <value abbrev="GET" id="2" name="Get Plan">
+        </value>
+      <value abbrev="GET_INFO" id="3" name="Get Plan Info">
+        </value>
+      <value abbrev="CLEAR" id="4" name="Clear Database">
+        </value>
+      <value abbrev="GET_STATE" id="5" name="Get Database State (Simple)">
+        </value>
+      <value abbrev="GET_DSTATE" id="6" name="Get Database State (Detailed)">
+        </value>
+      <value abbrev="BOOT" id="7" name="Boot Notification">
+        </value>
+    </field>
+    <field abbrev="request_id" name="Request ID" type="uint16_t">
+      </field>
+    <field abbrev="plan_id" name="Plan ID" type="plaintext">
+      </field>
+    <field abbrev="arg" name="Argument" type="message">
+      </field>
+    <field abbrev="info" name="Complementary Information" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="PlanDBState" category="Plan Supervision" id="557" name="Plan DB State">
+    <field abbrev="plan_count" name="Plan -- Count" type="uint16_t">
+      </field>
+    <field abbrev="plan_size" name="Plan -- Size of all plans" type="uint32_t">
+      </field>
+    <field abbrev="change_time" name="Last Change -- Time" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="change_sid" name="Last Change -- Source Address" type="uint16_t">
+      </field>
+    <field abbrev="change_sname" name="Last Change -- Source Name" type="plaintext">
+      </field>
+    <field abbrev="md5" name="MD5" type="rawdata">
+      </field>
+    <field abbrev="plans_info" message-type="PlanDBInformation" name="Plan info" type="message-list">
+      </field>
+  </message>
+
+  <message abbrev="PlanDBInformation" category="Plan Supervision" id="558" name="Plan DB Information">
+    <field abbrev="plan_id" name="Plan ID" type="plaintext">
+      </field>
+    <field abbrev="plan_size" name="Plan Size" type="uint16_t">
+      </field>
+    <field abbrev="change_time" name="Last Changed -- Time" type="fp64_t">
+      </field>
+    <field abbrev="change_sid" name="Last Change -- Source Address" type="uint16_t">
+      </field>
+    <field abbrev="change_sname" name="Last Change -- Source Name" type="plaintext">
+      </field>
+    <field abbrev="md5" name="MD5" type="rawdata">
+      </field>
+  </message>
+
+  <message abbrev="PlanControl" category="Plan Supervision" id="559" name="Plan Control" source="ccu,vehicle">
+    <field abbrev="type" name="Type" prefix="PC" type="uint8_t" unit="Enumerated">
+      <value abbrev="REQUEST" id="0" name="Request" />
+      <value abbrev="SUCCESS" id="1" name="Reply -- Success" />
+      <value abbrev="FAILURE" id="2" name="Reply -- Failure" />
+      <value abbrev="IN_PROGRESS" id="3" name="Reply -- In Progress" />
+    </field>
+    <field abbrev="op" name="Operation" prefix="PC" type="uint8_t" unit="Enumerated">
+      <value abbrev="START" id="0" name="Start Plan">
+        </value>
+      <value abbrev="STOP" id="1" name="Stop Plan">
+        </value>
+      <value abbrev="LOAD" id="2" name="Load Plan">
+        </value>
+      <value abbrev="GET" id="3" name="Get Plan">
+        </value>
+    </field>
+    <field abbrev="request_id" name="Request ID" type="uint16_t">
+      </field>
+    <field abbrev="plan_id" name="Plan Identifier" type="plaintext">
+      </field>
+    <field abbrev="flags" name="Flags" prefix="FLG" type="uint16_t" unit="Bitfield">
+      
+      <value abbrev="CALIBRATE" id="0x0001" name="Calibrate Vehicle">
+        </value>
+      <value abbrev="IGNORE_ERRORS" id="0x0002" name="Ignore Errors">
+        </value>
+      
+    </field>
+    <field abbrev="arg" name="Request/Reply Argument" type="message">
+      </field>
+    <field abbrev="info" name="Complementary Info" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="PlanControlState" category="Plan Supervision" flags="periodic" id="560" name="Plan Control State" source="vehicle">
+    <field abbrev="state" name="State" prefix="PCS" type="uint8_t" unit="Enumerated">
+      <value abbrev="BLOCKED" id="0" name="Blocked">
+        </value>
+      <value abbrev="READY" id="1" name="Ready">
+        </value>
+      <value abbrev="INITIALIZING" id="2" name="Initializing">
+        </value>
+      <value abbrev="EXECUTING" id="3" name="Executing">
+        </value>
+    </field>
+    <field abbrev="plan_id" name="Plan -- ID" type="plaintext">
+      </field>
+    <field abbrev="plan_eta" name="Plan -- ETA" type="int32_t" unit="s">
+      </field>
+    <field abbrev="plan_progress" name="Plan -- Progress" type="fp32_t" unit="%">
+      </field>
+    <field abbrev="man_id" name="Maneuver -- ID" type="plaintext">
+      </field>
+    <field abbrev="man_type" name="Maneuver -- Type" type="uint16_t">
+      </field>
+    <field abbrev="man_eta" name="Maneuver -- ETA" type="int32_t" unit="s">
+      </field>
+    <field abbrev="last_outcome" name="Last Plan Outcome" prefix="LPO" type="uint8_t" unit="Enumerated">
+      <value abbrev="NONE" id="0" name="None">
+        </value>
+      <value abbrev="SUCCESS" id="1" name="Success">
+        </value>
+      <value abbrev="FAILURE" id="2" name="Failure">
+        </value>
+    </field>
+  </message>
+
+  <message abbrev="PlanVariable" category="Plan Supervision" id="561" name="Plan Variable" source="vehicle,ccu">
+    <field abbrev="name" name="Name" type="plaintext" />
+    <field abbrev="value" name="Value" type="plaintext" />
+    <field abbrev="type" name="Type" prefix="PVT" type="uint8_t" unit="Enumerated">
+      <value abbrev="BOOLEAN" id="0" name="Boolean" />
+      <value abbrev="NUMBER" id="1" name="Number" />
+      <value abbrev="TEXT" id="2" name="Text" />
+      <value abbrev="MESSAGE" id="3" name="Message" />
+    </field>
+    <field abbrev="access" name="Access Type" prefix="PVA" type="uint8_t" unit="Enumerated">
+      <value abbrev="INPUT" id="0" name="Input" />
+      <value abbrev="OUTPUT" id="1" name="Output" />
+      <value abbrev="LOCAL" id="2" name="Local" />
+    </field>
+  </message>
+
+  <message abbrev="PlanGeneration" category="Plan Supervision" id="562" name="Plan Generation" source="vehicle,ccu">
+    <field abbrev="cmd" name="Command" prefix="CMD" type="uint8_t" unit="Enumerated">
+      <value abbrev="GENERATE" id="0" name="Generate">
+        </value>
+      <value abbrev="EXECUTE" id="1" name="Execute">
+        </value>
+    </field>
+    <field abbrev="op" name="Operation" prefix="OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="REQUEST" id="0" name="Request">
+        </value>
+      <value abbrev="ERROR" id="1" name="Error">
+        </value>
+      <value abbrev="SUCCESS" id="2" name="Success">
+        </value>
+    </field>
+    <field abbrev="plan_id" name="Plan Identifier" type="plaintext">
+      </field>
+    <field abbrev="params" name="Parameters" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  <message abbrev="PlanStatistics" category="Plan Supervision" id="564" name="Plan Statistics" source="vehicle">
+    <field abbrev="plan_id" name="Plan Identifier" type="plaintext">
+      </field>
+    <field abbrev="type" name="Type" prefix="TP" type="uint8_t" unit="Enumerated">
+      <value abbrev="PREPLAN" id="0" name="Before Plan" />
+      <value abbrev="INPLAN" id="1" name="During Plan" />
+      <value abbrev="POSTPLAN" id="2" name="After Plan" />
+    </field>
+    <field abbrev="properties" name="Properties" prefix="PRP" type="uint8_t" unit="Bitfield">
+      <value abbrev="BASIC" id="0x00" name="Basic Plan">
+        </value>
+      <value abbrev="NONLINEAR" id="0x01" name="Nonlinear">
+        </value>
+      <value abbrev="INFINITE" id="0x02" name="Infinite">
+        </value>
+      <value abbrev="CYCLICAL" id="0x04" name="Cyclical">
+        </value>
+      <value abbrev="ALL" id="0x07" name="All">
+        </value>
+    </field>
+    <field abbrev="durations" name="Durations" type="plaintext" unit="TupleList">
+      </field>
+    <field abbrev="distances" name="Distances" type="plaintext" unit="TupleList">
+      </field>
+    <field abbrev="actions" name="Actions" type="plaintext" unit="TupleList">
+      </field>
+    <field abbrev="fuel" name="Fuel" type="plaintext" unit="TupleList">
+      </field>
+  </message>
+
+  
+  <message abbrev="CcuEvent" category="CCU" id="606" name="CCU Event" source="ccu">
+    <field abbrev="type" name="Event Type" prefix="EVT" type="uint8_t" unit="Enumerated">
+      <value abbrev="LOG_ENTRY" id="1" name="Log Book Entry Added" />
+      <value abbrev="PLAN_ADDED" id="2" name="Plan Added" />
+      <value abbrev="PLAN_REMOVED" id="3" name="Plan Removed" />
+      <value abbrev="PLAN_CHANGED" id="4" name="Plan Changed" />
+      <value abbrev="MAP_FEATURE_ADDED" id="5" name="Map feature added" />
+      <value abbrev="MAP_FEATURE_REMOVED" id="6" name="Map feature removed" />
+      <value abbrev="MAP_FEATURE_CHANGED" id="7" name="Map feature changed" />
+      <value abbrev="TELEOPERATION_STARTED" id="8" name="The sender is now teleoperating the vehicle" />
+      <value abbrev="TELEOPERATION_ENDED" id="9" name="The sender stopped teleoperating the vehicle" />
+    </field>
+
+    <field abbrev="id" name="Identifier" type="plaintext" />
+    <field abbrev="arg" name="Additional Data" type="message" />
+  </message>
+
+  
+  <message abbrev="VehicleLinks" category="Autonomy" id="650" name="Vehicle Links" source="vehicle">
+    <field abbrev="localname" name="Local Name" type="plaintext">
+      </field>
+    <field abbrev="links" message-type="Announce" name="Active Links" type="message-list">
+      </field>
+  </message>
+
+  <message abbrev="TrexOperation" category="Autonomy" id="655" name="TREX Operation" source="vehicle,ccu">
+    <field abbrev="op" name="Operation" prefix="OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="POST_TOKEN" id="1" name="Post Token" />
+      <value abbrev="POST_GOAL" id="2" name="Post Goal" />
+      <value abbrev="RECALL_GOAL" id="3" name="Recall Goal" />
+      <value abbrev="REQUEST_PLAN" id="4" name="Request current plan" />
+      <value abbrev="REPORT_PLAN" id="5" name="Report current plan" />
+    </field>
+
+    <field abbrev="goal_id" name="Goal Id" type="plaintext">
+      </field>
+
+    <field abbrev="token" message-type="TrexToken" name="Token" type="message">
+      </field>
+  </message>
+
+  <message abbrev="TrexAttribute" category="Autonomy" id="656" name="TREX Attribute" source="vehicle,ccu">
+
+    <field abbrev="name" name="Attribute Name" type="plaintext">
+      </field>
+
+    <field abbrev="attr_type" name="Attribute type" prefix="TYPE" type="uint8_t" unit="Enumerated">
+      <value abbrev="BOOL" id="1" name="Boolean Domain" />
+      <value abbrev="INT" id="2" name="Integer Domain" />
+      <value abbrev="FLOAT" id="3" name="Float Domain" />
+      <value abbrev="STRING" id="4" name="String Domain" />
+      <value abbrev="ENUM" id="5" name="Enumerated Domain" />
+    </field>
+
+    <field abbrev="min" name="Minimum" type="plaintext">
+      </field>
+
+    <field abbrev="max" name="Maximum" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="TrexToken" category="Autonomy" id="657" name="TREX Token" source="vehicle,ccu">
+    <field abbrev="timeline" name="Timeline" type="plaintext" />
+    <field abbrev="predicate" name="Predicate" type="plaintext" />
+    <field abbrev="attributes" message-type="TrexAttribute" name="Attributes" type="message-list" />
+  </message>
+
+  
+  <message abbrev="EntityParameter" category="Core" id="801" name="EntityParameter" source="ccu,vehicle">
+    <field abbrev="name" name="Name" type="plaintext">
+      </field>
+    <field abbrev="value" name="Value" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="EntityParameters" category="Core" id="802" name="EntityParameters" source="ccu,vehicle">
+    <field abbrev="name" name="Entity Name" type="plaintext">
+      </field>
+    <field abbrev="params" message-type="EntityParameter" name="Parameters" type="message-list">
+      </field>
+  </message>
+
+  <message abbrev="QueryEntityParameters" category="Core" id="803" name="QueryEntityParameters" source="ccu,vehicle">
+    <field abbrev="name" name="Entity Name" type="plaintext" />
+    <field abbrev="visibility" name="Visibility" type="plaintext" />
+    <field abbrev="scope" name="Scope" type="plaintext" />
+  </message>
+
+  <message abbrev="SetEntityParameters" category="Core" id="804" name="SetEntityParameters" source="ccu,vehicle">
+    <field abbrev="name" name="Entity Name" type="plaintext" />
+    <field abbrev="params" message-type="EntityParameter" name="Parameters" type="message-list" />
+  </message>
+
+  <message abbrev="SaveEntityParameters" category="Core" id="805" name="SaveEntityParameters" source="ccu,vehicle">
+    <field abbrev="name" name="Entity Name" type="plaintext" />
+  </message>
+
+  <message abbrev="PushEntityParameters" category="Core" id="811" name="Push Entity Parameters" source="ccu,vehicle">
+    <field abbrev="name" name="Entity Name" type="plaintext" />
+  </message>
+
+  <message abbrev="PopEntityParameters" category="Core" id="812" name="Pop Entity Parameters" source="ccu,vehicle">
+    <field abbrev="name" name="Entity Name" type="plaintext" />
+  </message>
+
+  <message abbrev="IoEvent" category="Core" id="813" name="I/O Event" source="ccu,vehicle">
+    <field abbrev="type" name="Type" prefix="IOV_TYPE" type="uint8_t" unit="Enumerated">
+      <value abbrev="INPUT" id="1" name="Input Available" />
+      <value abbrev="INPUT_ERROR" id="2" name="Input Error" />
+    </field>
+    <field abbrev="error" name="Error Message" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="UamTxFrame" category="Acoustic Communication" id="814" name="UamTxFrame" source="ccu,vehicle">
+    <field abbrev="seq" name="Sequence Id" type="uint16_t">
+      </field>
+    <field abbrev="sys_dst" name="Destination System" type="plaintext">
+      </field>
+    <field abbrev="flags" name="Flags" prefix="UTF" type="uint8_t" unit="Bitfield">
+      <value abbrev="ACK" id="0x01" name="Acknowledgement">
+        </value>
+      <value abbrev="DELAYED" id="0x02" name="Delayed">
+        </value>
+    </field>
+    <field abbrev="data" name="Data" type="rawdata">
+      </field>
+  </message>
+
+  <message abbrev="UamRxFrame" category="Acoustic Communication" id="815" name="UamRxFrame" source="ccu,vehicle">
+    <field abbrev="sys_src" name="Source System" type="plaintext">
+      </field>
+    <field abbrev="sys_dst" name="Destination System" type="plaintext">
+      </field>
+    <field abbrev="flags" name="Flags" prefix="URF" type="uint8_t" unit="Bitfield">
+      <value abbrev="PROMISCUOUS" id="0x01" name="Promiscuous">
+        </value>
+      <value abbrev="DELAYED" id="0x02" name="Delayed">
+        </value>
+    </field>
+    <field abbrev="data" name="Data" type="rawdata">
+      </field>
+  </message>
+
+  <message abbrev="UamTxStatus" category="Acoustic Communication" id="816" name="UamTxStatus" source="ccu,vehicle">
+    <field abbrev="seq" name="Sequence Id" type="uint16_t">
+      </field>
+    <field abbrev="value" name="Value" prefix="UTS" type="uint8_t" unit="Enumerated">
+      <value abbrev="DONE" id="0" name="Transmission Completed">
+        </value>
+      <value abbrev="FAILED" id="1" name="Transmission Failed">
+        </value>
+      <value abbrev="CANCELED" id="2" name="Transmission Canceled">
+        </value>
+      <value abbrev="BUSY" id="3" name="Modem is busy">
+        </value>
+      <value abbrev="INV_ADDR" id="4" name="Invalid address">
+        </value>
+      <value abbrev="IP" id="5" name="In Progress">
+        </value>
+      <value abbrev="UNSUPPORTED" id="6" name="Unsupported operation">
+        </value>
+      <value abbrev="INV_SIZE" id="7" name="Invalid transmission size">
+        </value>
+      <value abbrev="NOT_TRANSDUCER" id="8" name="Not transducer">
+        </value>
+    </field>
+    <field abbrev="error" name="Error Message" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="UamRxRange" category="Acoustic Communication" id="817" name="UamRxRange" source="ccu,vehicle">
+    <field abbrev="seq" name="Sequence Id" type="uint16_t">
+      </field>
+    <field abbrev="sys" name="System" type="plaintext">
+      </field>
+    <field abbrev="value" name="Value" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="UamTxRange" category="Acoustic Communication" id="818" name="UamTxRange" source="ccu,vehicle">
+    <field abbrev="seq" name="Sequence Id" type="uint16_t">
+      </field>
+    <field abbrev="sys_dst" name="Destination System" type="plaintext">
+      </field>
+    <field abbrev="timeout" name="Timeout" type="fp32_t" unit="s">
+      </field>
+  </message>
+
+  <message abbrev="MessagePart" category="Networking" id="877" name="Message Fragment">
+    <field abbrev="uid" name="Transmission Unique Id" type="uint8_t" />
+    <field abbrev="frag_number" name="Fragment Number" type="uint8_t" />
+    <field abbrev="num_frags" name="Total Number of fragments" type="uint8_t" />
+    <field abbrev="data" name="Fragment Data" type="rawdata" />
+  </message>
+
+  <message abbrev="Aborted" category="Plan Supervision" id="889" name="Aborted">
+    </message>
+
+  <message abbrev="UsblAngles" category="Acoustic Communication" id="890" name="USBL Angles">
+    <field abbrev="target" name="Target" type="uint16_t">
+      </field>
+    <field abbrev="bearing" name="Bearing" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="elevation" name="Elevation" type="fp32_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="UsblPosition" category="Acoustic Communication" id="891" name="USBL Position">
+    <field abbrev="target" name="Target" type="uint16_t">
+      </field>
+    <field abbrev="x" name="X" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="y" name="Y" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z" name="Z" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="UsblFix" category="Acoustic Communication" id="892" name="USBL Fix">
+    <field abbrev="target" name="Target" type="uint16_t">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude (WGS-84)" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude (WGS-84)" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="UsblAnglesExtended" category="Acoustic Communication" id="898" name="USBL Angles Extended">
+    <field abbrev="target" name="Target" type="plaintext">
+      </field>
+    <field abbrev="lbearing" name="Local Bearing" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="lelevation" name="Local Elevation" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="bearing" name="Bearing" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="elevation" name="Elevation" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="phi" max="3.141592653589793" min="-3.141592653589793" name="Roll Angle" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="theta" max="1.57079632679490" min="-1.57079632679490" name="Pitch Angle" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="psi" max="3.141592653589793" min="-3.141592653589793" name="Yaw Angle" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="accuracy" max="3.141592653589793" min="0" name="Accuracy" type="fp32_t" unit="rad">
+      </field>
+  </message>
+
+  <message abbrev="UsblPositionExtended" category="Acoustic Communication" id="899" name="USBL Position Extended">
+    <field abbrev="target" name="Target" type="plaintext">
+      </field>
+    <field abbrev="x" name="X" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="y" name="Y" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z" name="Z" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="n" name="N" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="e" name="E" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="d" name="D" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="phi" max="3.141592653589793" min="-3.141592653589793" name="Roll Angle" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="theta" max="1.57079632679490" min="-1.57079632679490" name="Pitch Angle" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="psi" max="3.141592653589793" min="-3.141592653589793" name="Yaw Angle" type="fp32_t" unit="rad">
+      </field>
+    <field abbrev="accuracy" min="0" name="Accuracy" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="UsblFixExtended" category="Acoustic Communication" id="900" name="USBL Fix Extended">
+    <field abbrev="target" name="Target" type="plaintext">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude (WGS-84)" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude (WGS-84)" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="accuracy" min="0" name="Accuracy" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="UsblModem" category="Acoustic Communication" id="901" name="USBL Modem Configuration" source="ccu,vehicle">
+    <field abbrev="name" name="Modem Name" type="plaintext">
+      </field>
+    <field abbrev="lat" max="1.5707963267948966" min="-1.5707963267948966" name="Latitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="lon" max="3.141592653589793" min="-3.141592653589793" name="Longitude WGS-84" type="fp64_t" unit="rad">
+      </field>
+    <field abbrev="z" name="Z Reference" type="fp32_t" unit="m">
+      </field>
+    <field abbrev="z_units" enum-def="ZUnits" name="Z Units" type="uint8_t" unit="Enumerated" value="0">
+      </field>
+  </message>
+
+  <message abbrev="UsblConfig" category="Acoustic Communication" id="902" name="USBL Configuration" source="ccu,vehicle">
+    <field abbrev="op" name="Operation" prefix="OP" type="uint8_t" unit="Enumerated">
+      <value abbrev="SET_CFG" id="0" name="Set LBL Configuration">
+        </value>
+      <value abbrev="GET_CFG" id="1" name="Retrieve LBL Configuration">
+        </value>
+      <value abbrev="CUR_CFG" id="2" name="Reply to a GET command" />
+    </field>
+    <field abbrev="modems" message-type="UsblModem" name="Modems" type="message-list">
+      </field>
+  </message>
+
+  <message abbrev="DissolvedOrganicMatter" category="Sensors" flags="periodic" id="903" name="Dissolved Organic Matter" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="PPB">
+      </field>
+    <field abbrev="type" name="Type of measurement" prefix="DT" type="uint8_t" unit="Enumerated">
+      <value abbrev="COLORED" id="0" name="Colored" />
+      <value abbrev="FLUORESCENT" id="1" name="Fluorescent" />
+    </field>
+  </message>
+
+  <message abbrev="OpticalBackscatter" category="Sensors" flags="periodic" id="904" name="Optical Backscattering Coefficient" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="1/m">
+      </field>
+  </message>
+
+  <message abbrev="Tachograph" category="Vehicle Supervision" flags="periodic" id="905" name="Tachograph" source="vehicle">
+    <field abbrev="timestamp_last_service" name="Last Service Timestamp" type="fp64_t" unit="s">
+      </field>
+    <field abbrev="time_next_service" name="Time - Next Service" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_motor_next_service" name="Time Motor - Next Service" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_idle_ground" name="Time Idle - Ground" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_idle_air" name="Time Idle - Air" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_idle_water" name="Time Idle - Water" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_idle_underwater" name="Time Idle - Underwater" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_idle_unknown" name="Time Idle - Unknown" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_motor_ground" name="Time Motor - Ground" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_motor_air" name="Time Motor - Air" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_motor_water" name="Time Motor - Water" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_motor_underwater" name="Time Motor - Underwater" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="time_motor_unknown" name="Time Motor - Unknown" type="fp32_t" unit="s">
+      </field>
+    <field abbrev="rpm_min" name="Recorded RPMs - Minimum" type="int16_t" unit="rpm">
+      </field>
+    <field abbrev="rpm_max" name="Recorded RPMs - Maximum" type="int16_t" unit="rpm">
+      </field>
+    <field abbrev="depth_max" name="Recorded Depth - Maximum" type="fp32_t" unit="m">
+      </field>
+  </message>
+
+  <message abbrev="GpioState" category="Actuation" id="2000" name="GPIO State" source="vehicle">
+    <field abbrev="name" name="Name" type="plaintext">
+      </field>
+    <field abbrev="value" name="Value" type="uint8_t">
+      </field>
+  </message>
+
+  <message abbrev="GpioStateGet" category="Actuation" id="2001" name="Get GPIO State" source="vehicle">
+    <field abbrev="name" name="Name" type="plaintext">
+      </field>
+  </message>
+
+  <message abbrev="GpioStateSet" category="Actuation" id="2002" name="Set GPIO State" source="vehicle">
+    <field abbrev="name" name="Name" type="plaintext">
+      </field>
+    <field abbrev="value" name="Value" type="uint8_t">
+      </field>
+  </message>
+
+  <message abbrev="ColoredDissolvedOrganicMatter" category="Sensors" flags="periodic" id="2003" name="Colored Dissolved Organic Matter" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="PPB">
+      </field>
+  </message>
+
+  <message abbrev="FluorescentDissolvedOrganicMatter" category="Sensors" flags="periodic" id="2004" name="Fluorescent Dissolved Organic Matter" source="vehicle">
+    <field abbrev="value" name="Value" type="fp32_t" unit="PPB">
+      </field>
+  </message>
+
+  <message abbrev="IridiumMsgTxExtended" category="Networking" id="2005" name="Transmit Iridium Message (Extended)" source="vehicle,ccu">
+    <field abbrev="req_id" name="Request Identifier" type="uint16_t">
+      </field>
+    <field abbrev="ttl" name="Time to live" type="uint16_t" unit="s">
+      </field>
+    <field abbrev="expiration" name="Expiration Time" type="uint32_t" unit="s">
+      </field>
+    <field abbrev="destination" name="Destination Identifier" type="plaintext">
+      </field>
+    <field abbrev="data" name="Data" type="rawdata">
+      </field>
+  </message>
+
+  <message abbrev="SonarPulse" category="Sensors" id="2006" name="Sonar Pulse" source="vehicle">
+    <field abbrev="frequency" name="Frequency" type="int32_t" unit="Hz">
+      </field>
+    <field abbrev="pulse_length" name="Pulse Length" type="int32_t" unit="ms">
+      </field>
+    <field abbrev="time_delay" name="Time Delay" type="int32_t" unit="ms">
+      </field>
+    <field abbrev="simulated_speed" name="Simulated Speed" type="int32_t" unit="m/s">
+      </field>
+  </message>
+</messages>
