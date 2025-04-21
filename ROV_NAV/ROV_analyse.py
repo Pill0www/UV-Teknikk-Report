@@ -116,9 +116,9 @@ def animate_rov(data):
     ax = fig.add_subplot(111, projection='3d')
 
     # Sett grenser på akser
-    ax.set_xlim(x.min()-5, x.max()+5)
-    ax.set_ylim(y.min()-5, y.max()+5)
-    ax.set_zlim(z.min()-5, z.max()+5)
+    ax.set_xlim(x.min(), x.max())
+    ax.set_ylim(y.min(), y.max())
+    ax.set_zlim(z.min(), z.max())
 
     # Aksetitler
     ax.set_xlabel('East [m]')
