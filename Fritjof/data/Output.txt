@@ -1,0 +1,77 @@
+[2025/03/14 14:08:45] - WRN [Supervisors.Vehicle] >> now in 'CALIBRATION' mode
+[2025/03/14 14:08:48] - MSG [Plan.Engine] >> Goto1: executing maneuver
+[2025/03/14 14:08:49] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2025/03/14 14:08:49] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.44340 10.35337 to 63.44261 10.35243
+[2025/03/14 14:09:03] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:09:04] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:09:33] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:09:34] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:09:54] - MSG [Plan.Engine] >> Goto2: executing maneuver
+[2025/03/14 14:09:54] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.44261 10.35243 to 63.43973 10.35354
+[2025/03/14 14:10:03] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:10:04] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:10:24] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-karolhb-200-22'
+[2025/03/14 14:10:33] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:10:34] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:11:04] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:11:05] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:11:35] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:11:36] - ERR [Transports.Evologics] >> task died with uncaught exception: empty payload: restarting
+[2025/03/14 14:11:36] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:12:06] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:12:07] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:12:36] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:12:37] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:13:04] - MSG [Plan.Engine] >> Goto3: executing maneuver
+[2025/03/14 14:13:05] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.43973 10.35354 to 63.44019 10.35809
+[2025/03/14 14:13:07] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:13:08] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:13:37] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:13:38] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:14:08] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:14:09] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:14:38] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:14:39] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:15:10] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:15:11] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:15:41] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:15:42] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:16:11] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:16:12] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:16:22] - MSG [Plan.Engine] >> Goto4: executing maneuver
+[2025/03/14 14:16:23] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.44019 10.35809 to 63.44131 10.35583
+[2025/03/14 14:16:42] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:16:43] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:17:12] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:17:13] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:17:43] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:17:44] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:18:14] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:18:15] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:18:43] - MSG [Plan.Engine] >> PopUp1: executing maneuver
+[2025/03/14 14:18:43] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.44131 10.35583 to 63.44128 10.35590
+[2025/03/14 14:18:44] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:18:45] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:18:57] - MSG [Control.Path.VectorField] >> now loitering
+[2025/03/14 14:19:15] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:19:16] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:19:46] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:19:47] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:20:16] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:20:17] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:20:47] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:20:48] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:21:18] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:21:19] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:21:48] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:21:49] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:22:13] - MSG [Control.Path.VectorField] >> [BottomTrack.Depth] >> started braking
+[2025/03/14 14:22:19] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 14:22:20] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 14:22:25] - ERR [Control.Path.VectorField] >> [BottomTrack.Avoiding] >> unable to avoid obstacle
+[2025/03/14 14:22:25] - MSG [Monitors.Entities] >> Path Control : Normal -> Error | [BottomTrack.Avoiding] >> unable to avoid obstacle
+[2025/03/14 14:22:26] - WRN [Supervisors.Vehicle] >> vehicle errors: Path Control
+[2025/03/14 14:22:26] - WRN [Supervisors.Vehicle] >> now in 'ERROR' mode
+[2025/03/14 14:22:26] - ERR [Plan.Engine] >> reply -- Start Plan (sei) -- Path Control: [BottomTrack.Avoiding] >> unable to avoid obstacle
+[2025/03/14 14:22:26] - MSG [Transports.Logging] >> log stopped '20250314/140844_sei'
+[2025/03/14 14:22:26] - MSG [Transports.Logging] >> log started '20250314/142226'
