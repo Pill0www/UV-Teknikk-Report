@@ -4,6 +4,8 @@ from mpl_toolkits.mplot3d.art3d import Line3DCollection
 import numpy as np
 import matplotlib.colors as mcolors
 import matplotlib.cm as cmx
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib import animation
 
 def read_file(filename):
     data = {}
@@ -36,14 +38,21 @@ def samle_lister(dict1, dict2, dict3):
     return resultat
 
 data = samle_lister(data1,data2,data3)
-print(data.keys())
 
 def plot_pos_time(data):
     # Ekstraher data
-    x = data["ROV East"].values
-    y = data["ROV North"].values
-    z = data["ROV Height"].values
-    time = data["Time"].values  # antar tid er i stigende rekkefølge
+    x = []
+    y = []
+    z = []
+    for i in range(len(data)):
+        x.append(float(data["ROV East"][i]))
+        y.append(float(data["ROV North"][i]))
+        z.append(float(data["ROV Height"][i]))
+    
+    x = np.array(x)
+    y = np.array(y)
+    z = np.array(z)
+    time = data["Time"]  # antar tid er i stigende rekkefølge
     
     # Lag linjesegmenter for 3D plotting
     points = np.array([x, y, z]).T.reshape(-1, 1, 3)
@@ -80,3 +89,60 @@ def plot_pos_time(data):
     cbar.set_label('Normalisert tid')
 
     plt.show()
+
+plot_pos_time(data)
+
+
+def animate_rov(data):
+    # Ekstraher data
+    x = []
+    y = []
+    z = []
+    for i in range(len(data)):
+        x.append(float(data["ROV East"][i]))
+        y.append(float(data["ROV North"][i]))
+        z.append(float(data["ROV Height"][i]))
+    
+    x = np.array(x)
+    y = np.array(y)
+    z = np.array(z)
+
+    # Sett opp figuren og 3D-aksen
+    fig = plt.figure(figsize=(10, 8))
+    ax = fig.add_subplot(111, projection='3d')
+
+    # Sett grenser på akser
+    ax.set_xlim(x.min()-5, x.max()+5)
+    ax.set_ylim(y.min()-5, y.max()+5)
+    ax.set_zlim(z.min()-5, z.max()+5)
+
+    # Aksetitler
+    ax.set_xlabel('East [m]')
+    ax.set_ylabel('North [m]')
+    ax.set_zlabel('Height [m]')
+    ax.set_title('ROV 3D Posisjon Animasjon')
+
+    # Lag en linje som vi skal oppdatere
+    line, = ax.plot([], [], [], lw=2)
+
+    # Init-funksjon
+    def init():
+        line.set_data([], [])
+        line.set_3d_properties([])
+        return line,
+
+    # Update-funksjon for hvert frame
+    def update(frame):
+        line.set_data(x[:frame], y[:frame])
+        line.set_3d_properties(z[:frame])
+        return line,
+
+    # Lag animasjonen
+    ani = animation.FuncAnimation(fig, update, frames=len(x), init_func=init,
+                                  interval=100, blit=True)
+
+    plt.show()
+
+    return ani
+
+animate_rov(data)
