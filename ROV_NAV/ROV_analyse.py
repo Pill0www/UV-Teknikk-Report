@@ -30,14 +30,18 @@ def read_file(filename):
 data1 = read_file("ROV_NAV/Data/pos1.csv")
 data2 = read_file("ROV_NAV/Data/pos2.csv")
 data3 = read_file("ROV_NAV/Data/pos3.csv")
+data4 = read_file("ROV_NAV/Data/pos4.csv")
+data5 = read_file("ROV_NAV/Data/pos5.csv")
+data6 = read_file("ROV_NAV/Data/pos6.csv")
 
-def samle_lister(dict1, dict2, dict3):
+
+def samle_lister(dict1, dict2, dict3,dict4, dict5, dict6):
     resultat = {}
     for key in dict1:
-        resultat[key] = dict1[key] + dict2[key] + dict3[key]
+        resultat[key] = dict1[key] + dict2[key] + dict3[key]+dict4[key] + dict5[key] + dict6[key]
     return resultat
 
-data = samle_lister(data1,data2,data3)
+data = samle_lister(data1,data2,data3,data4,data5,data6)
 
 def plot_pos_time(data):
     # Ekstraher data
