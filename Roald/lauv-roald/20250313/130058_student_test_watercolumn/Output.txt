@@ -1,0 +1,915 @@
+[2025/03/13 13:00:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:00:59] - WRN [Supervisors.Vehicle] >> now in 'CALIBRATION' mode
+[2025/03/13 13:01:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:02] - MSG [Plan.Engine] >> Goto1: executing maneuver
+[2025/03/13 13:01:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:03] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2025/03/13 13:01:03] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45843 10.36982 to 63.45893 10.37083
+[2025/03/13 13:01:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:27] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:01:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:28] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:01:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:46] - MSG [Plan.Engine] >> Goto2: executing maneuver
+[2025/03/13 13:01:46] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45893 10.37083 to 63.45819 10.37169
+[2025/03/13 13:01:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:57] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:01:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:01:58] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:01:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:21] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-aurlab-167-78'
+[2025/03/13 13:02:21] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-karolhb-86-184'
+[2025/03/13 13:02:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:28] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:02:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:29] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:02:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:40] - MSG [Plan.Engine] >> YoYo1: executing maneuver
+[2025/03/13 13:02:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:41] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45819 10.37169 to 63.45812 10.37382
+[2025/03/13 13:02:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:02:59] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:03:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:00] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:03:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:29] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:03:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:30] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:03:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:57] - MSG [Plan.Engine] >> YoYo2: executing maneuver
+[2025/03/13 13:03:57] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45812 10.37382 to 63.45690 10.37372
+[2025/03/13 13:03:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:03:59] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:04:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:00] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:04:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:30] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:04:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:31] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:04:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:04:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:01] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:05:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:02] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:05:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:27] - MSG [Plan.Engine] >> YoYo3: executing maneuver
+[2025/03/13 13:05:27] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45690 10.37372 to 63.45690 10.37082
+[2025/03/13 13:05:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:32] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:05:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:33] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:05:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:05:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:03] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:06:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:04] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:06:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:34] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:06:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:35] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:06:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:06:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:04] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:07:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:05] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:07:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:08] - MSG [Plan.Engine] >> YoYo4: executing maneuver
+[2025/03/13 13:07:08] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45690 10.37082 to 63.45805 10.37091
+[2025/03/13 13:07:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:35] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:07:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:36] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:07:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:07:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:07] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:08:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:08] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:08:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:38] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:08:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:39] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:08:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:40] - MSG [Plan.Engine] >> PopUp1: executing maneuver
+[2025/03/13 13:08:40] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45805 10.37091 to 63.45799 10.37091
+[2025/03/13 13:08:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:56] - MSG [Control.Path.VectorField] >> now loitering
+[2025/03/13 13:08:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:08:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:08] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:09:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:09] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:09:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:38] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:09:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:39] - MSG [Supervisors.Safety] >> sending SMS (ttl:120) to +4745860715: (R) (lauv-roald) 13:09:39 / 63 27.536480, 10 22.254860 / f:30 c:22 / p:96 > 63 27.479534, 10 22.254546
+[2025/03/13 13:09:39] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:09:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:40] - WRN [Transports.GSM] >> poll status fault: unexpected reply
+[2025/03/13 13:09:40] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:09:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:41] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:09:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:44] - MSG [Navigation.AUV.Navigation] >> estimating error of 8.81% (62.0/703.4m) in 475s
+[2025/03/13 13:09:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:46] - MSG [Navigation.AUV.Navigation] >> estimating error of 100.00% (24.0/1.2m) in 2s
+[2025/03/13 13:09:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:49] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45906 10.37053 to 63.45906 10.37053
+[2025/03/13 13:09:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:51] - MSG [Plan.Engine] >> StationKeeping1: executing maneuver
+[2025/03/13 13:09:51] - MSG [Maneuver.Multiplexer] >> outside safe region (distance: 94.9 m)
+[2025/03/13 13:09:51] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45906 10.37053 to 63.45826 10.36988
+[2025/03/13 13:09:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:09:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:09] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:10:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:10] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:10:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:32] - WRN [Transports.GSM] >> poll status fault: unexpected reply
+[2025/03/13 13:10:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:40] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:10:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:41] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:10:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:10:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:11] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:11:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:12] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:11:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:35] - MSG [Maneuver.Multiplexer] >> inside safe region (distance: 6.3 m)
+[2025/03/13 13:11:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:42] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:11:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:43] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:11:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:11:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:13] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:12:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:14] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:12:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:17] - MSG [Maneuver.Multiplexer] >> outside safe region (distance: 10.0 m)
+[2025/03/13 13:12:17] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45824 10.36969 to 63.45826 10.36988
+[2025/03/13 13:12:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:43] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:12:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:44] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:12:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:46] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45817 10.37001 to 63.45826 10.36988
+[2025/03/13 13:12:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:51] - MSG [Maneuver.Multiplexer] >> inside safe region (distance: 7.7 m)
+[2025/03/13 13:12:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:12:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:14] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:13:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:15] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:13:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:19] - MSG [Maneuver.Multiplexer] >> outside safe region (distance: 10.0 m)
+[2025/03/13 13:13:19] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45835 10.36983 to 63.45826 10.36988
+[2025/03/13 13:13:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:36] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:37] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:38] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:39] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:40] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:41] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:42] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:43] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:44] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:45] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:45] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:13:46] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:46] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:13:47] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:48] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:49] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:50] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:51] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:52] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:53] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:54] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:55] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:56] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:57] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:58] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:13:59] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:00] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:01] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:02] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:03] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:04] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:05] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:06] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:07] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:08] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:09] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:10] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:11] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:12] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:13] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:14] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:15] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:16] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:16] - DBG [Transports.Evologics] >> modem busy
+[2025/03/13 13:14:17] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:17] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45828 10.36966 to 63.45826 10.36988
+[2025/03/13 13:14:17] - DBG [Transports.Evologics] >> modem idle
+[2025/03/13 13:14:18] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:19] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:20] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:21] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:22] - MSG [Transports.UDP] >> activating transmission to node 'ccu-karolhb-86-184'
+[2025/03/13 13:14:22] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:22] - MSG [Maneuver.Multiplexer] >> inside safe region (distance: 5.7 m)
+[2025/03/13 13:14:23] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:24] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:25] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:26] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:27] - MSG [Transports.UDP] >> activating transmission to node 'ccu-aurlab-167-78'
+[2025/03/13 13:14:27] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:28] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:29] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:30] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:31] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:32] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:33] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:34] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:35] - WRN [Monitors.FuelLevel] >> fuel is running low
+[2025/03/13 13:14:35] - MSG [Plan.Engine] >> request -- Stop Plan ()
+[2025/03/13 13:14:35] - MSG [Plan.Engine] >> reply -- Stop Plan (student_test_watercolumn) -- OK
+[2025/03/13 13:14:35] - MSG [Plan.Engine] >> plan stopped
+[2025/03/13 13:14:35] - MSG [Transports.Logging] >> log stopped '20250313/130058_student_test_watercolumn'
+[2025/03/13 13:14:35] - MSG [Transports.Logging] >> log started '20250313/131435'

@@ -1,0 +1,257 @@
+[2025/03/14 10:03:18] - WRN [Supervisors.Vehicle] >> now in 'CALIBRATION' mode
+[2025/03/14 10:03:22] - MSG [Plan.Engine] >> Goto1: executing maneuver
+[2025/03/14 10:03:22] - WRN [Supervisors.Vehicle] >> now in 'MANEUVERING' mode
+[2025/03/14 10:03:23] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45367 10.37298 to 63.45456 10.37082
+[2025/03/14 10:03:44] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:03:45] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:04:15] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:04:16] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:04:45] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:04:46] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:04:54] - MSG [Plan.Engine] >> Goto2: executing maneuver
+[2025/03/14 10:04:55] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45456 10.37082 to 63.45941 10.37103
+[2025/03/14 10:05:01] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-aurlab-167-78'
+[2025/03/14 10:05:01] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-karolhb-200-22'
+[2025/03/14 10:05:16] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:05:17] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:05:47] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:05:48] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:06:17] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:06:18] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:06:48] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:06:49] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:07:20] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:07:21] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:07:51] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:07:52] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:08:21] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:08:22] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:08:52] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:08:53] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:09:23] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:09:24] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:09:54] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:09:55] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:10:25] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:10:26] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:10:55] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:10:56] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:11:27] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:11:28] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:11:54] - MSG [Plan.Engine] >> PopUp1: executing maneuver
+[2025/03/14 10:11:55] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45941 10.37103 to 63.45934 10.37101
+[2025/03/14 10:11:58] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:11:59] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:12:02] - MSG [Control.Path.VectorField] >> now loitering
+[2025/03/14 10:12:28] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:12:29] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:12:59] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:13:00] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:13:30] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:13:31] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:14:01] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:14:02] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:14:25] - MSG [Supervisors.Safety] >> sending SMS (ttl:120) to +4745860715: (R) (lauv-roald) 10:14:25 / 63 27.597100, 10 22.351470 / f:43 c:28 / p:51 > 63 27.560598, 10 22.260552
+[2025/03/14 10:14:26] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:14:26] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:27] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:14:27] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:28] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:29] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:30] - MSG [Navigation.AUV.Navigation] >> estimating error of 6.30% (59.9/951.7m) in 572s
+[2025/03/14 10:14:30] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:31] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:31] - MSG [Transports.UDP] >> activating transmission to node 'ccu-aurlab-167-78'
+[2025/03/14 10:14:31] - MSG [Transports.UDP] >> activating transmission to node 'ccu-karolhb-200-22'
+[2025/03/14 10:14:32] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:14:32] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:33] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:14:33] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:34] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:35] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45982 10.37230 to 63.45982 10.37230
+[2025/03/14 10:14:35] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:36] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:37] - MSG [Plan.Engine] >> Goto3: executing maneuver
+[2025/03/14 10:14:37] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45983 10.37234 to 63.45455 10.37062
+[2025/03/14 10:14:37] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:38] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:39] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:40] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:41] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:42] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:43] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:45] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:46] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:47] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:48] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:49] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:50] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:51] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:52] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:53] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:54] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:55] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:56] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:57] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:58] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:14:59] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:00] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:01] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:02] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:15:02] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:03] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:15:03] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:04] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:05] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:06] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:07] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:08] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:09] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:10] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:11] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:12] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:13] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:14] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:16] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:16] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-aurlab-167-78'
+[2025/03/14 10:15:16] - MSG [Transports.UDP] >> deactivating transmission to node 'ccu-karolhb-200-22'
+[2025/03/14 10:15:17] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:18] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:19] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:20] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:21] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:22] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:23] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:24] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:25] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:26] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:27] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:28] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:29] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:30] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:31] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:32] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:33] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:33] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:15:34] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:34] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:15:35] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:36] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:37] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:38] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:39] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:40] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:41] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:42] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:43] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:44] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:45] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:46] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:47] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:49] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:50] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:51] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:52] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:53] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:54] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:55] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:56] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:57] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:58] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:15:59] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:00] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:01] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:02] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:03] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:04] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:16:04] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:05] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:16:05] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:06] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:07] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:08] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:09] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:10] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:11] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:12] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:13] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:14] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:15] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:16] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:17] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:18] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:19] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:20] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:21] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:23] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:24] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:25] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:26] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:16:26] - WRN [Transports.GSM] >> discarded expired SMS to recipient '+4745860715'
+[2025/03/14 10:16:35] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:16:36] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:17:06] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:17:07] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:17:37] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:17:38] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:18:07] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:18:08] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:18:38] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:18:39] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:19:09] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:19:10] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:19:41] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:19:42] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:20:12] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:20:13] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:20:30] - MSG [Plan.Engine] >> PopUp2: executing maneuver
+[2025/03/14 10:20:30] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45455 10.37062 to 63.45461 10.37064
+[2025/03/14 10:20:42] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:20:43] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:20:45] - MSG [Control.Path.VectorField] >> now loitering
+[2025/03/14 10:21:13] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:21:14] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:21:44] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:21:45] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:22:15] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:22:16] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:22:46] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:22:47] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:23:17] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:23:18] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:23:45] - MSG [Supervisors.Safety] >> sending SMS (ttl:120) to +4745860715: (R) (lauv-roald) 10:23:45 / 63 27.261340, 10 22.210520 / f:41 c:27 / p:96 > 63 27.276598, 10 22.238666
+[2025/03/14 10:23:46] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:46] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:23:47] - MSG [Navigation.AUV.Navigation] >> estimating error of 3.04% (25.6/843.8m) in 556s
+[2025/03/14 10:23:47] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:47] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:23:48] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:48] - DBG [Transports.Evologics] >> modem busy
+[2025/03/14 10:23:49] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:49] - DBG [Transports.Evologics] >> modem idle
+[2025/03/14 10:23:50] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:51] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:52] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45438 10.37035 to 63.45438 10.37035
+[2025/03/14 10:23:52] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:53] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:54] - MSG [Plan.Engine] >> StationKeeping1: executing maneuver
+[2025/03/14 10:23:54] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:54] - MSG [Maneuver.Multiplexer] >> outside safe region (distance: 96.8 m)
+[2025/03/14 10:23:54] - MSG [Control.Path.VectorField] >> path (lat/lon): 63.45438 10.37038 to 63.45470 10.36858
+[2025/03/14 10:23:55] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:55] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:56] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:56] - MSG [Transports.UDP] >> activating transmission to node 'ccu-aurlab-167-78'
+[2025/03/14 10:23:56] - MSG [Transports.UDP] >> activating transmission to node 'ccu-karolhb-200-22'
+[2025/03/14 10:23:57] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:58] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:23:59] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:24:00] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:24:02] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:24:03] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:24:04] - MSG [Plan.Engine] >> request -- Stop Plan ()
+[2025/03/14 10:24:04] - MSG [Plan.Engine] >> reply -- Stop Plan (Group5_6_waterc) -- OK
+[2025/03/14 10:24:04] - MSG [Plan.Engine] >> plan stopped
+[2025/03/14 10:24:04] - MSG [Transports.Logging] >> log stopped '20250314/100318_Group5_6_waterc'
+[2025/03/14 10:24:04] - WRN [Transports.GSM] >> SMS transmission failed with error code -1
+[2025/03/14 10:24:04] - MSG [Transports.Logging] >> log started '20250314/102404'
