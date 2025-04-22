@@ -1,4 +1,6 @@
-from pyall import pyall
+import sys
+sys.path.append('pyall')  # <-- legger til stien så Python finner modulen din
+import pyall              # <-- importer pyall direkte, IKKE "from sys import pyall"
 import pandas as pd
 import time
 import matplotlib.pyplot as plt
@@ -56,8 +58,8 @@ def read_all_file(filename):
 
 
 ########### Your Path/Code here ###################################################
-mypath  = "/home/tore/tokt/tmr4120/MBES/Vessel_MBES05032020/"
-processedfilepath = "/home/tore/tokt/tmr4120/MBES/Vessel_MBES05032020/processed/"
+mypath  = "Multibeam/Data/0000_20240229_191034_RVGunnerusRAW.csv"
+processedfilepath = "Multibeam/Data/Processed.csv"
 
 files = [f for f in listdir(mypath) if isfile(join(mypath,f))]
 first = True
