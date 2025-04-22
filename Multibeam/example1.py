@@ -58,7 +58,7 @@ def read_all_file(filename):
 
 
 ########### Your Path/Code here ###################################################
-mypath  = "Multibeam/Data"
+mypath  = "Multibeam/Data/Raw"
 processedfilepath = "Multibeam/Data/Processed"
 
 files = [f for f in listdir(mypath) if isfile(join(mypath,f))]
