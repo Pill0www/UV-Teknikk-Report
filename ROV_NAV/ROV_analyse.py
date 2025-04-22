@@ -152,7 +152,7 @@ def animate_rov(data):
         lc.set_segments(current_segments)
         lc.set_color(current_colors)
 
-        # Fjern gammel pil hvis den finnes
+        # Fjern gammel pil hvis den eksisterer
         if arrow is not None:
             arrow.remove()
 
