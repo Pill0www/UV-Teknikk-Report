@@ -58,8 +58,8 @@ def read_all_file(filename):
 
 
 ########### Your Path/Code here ###################################################
-mypath  = "Multibeam/Data/0000_20240229_191034_RVGunnerusRAW.csv"
-processedfilepath = "Multibeam/Data/Processed.csv"
+mypath  = "Multibeam/Data"
+processedfilepath = "Multibeam/Data/Processed"
 
 files = [f for f in listdir(mypath) if isfile(join(mypath,f))]
 first = True
