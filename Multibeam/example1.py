@@ -1,6 +1,12 @@
+#Changes made by me
+#Imported pyall by accessing correct py file from directory using absolute path, sys and os had to be imported as well
+#df = read_all_file(os.path.join(mypath, f)) This line is new since the original joining wasn't correct for finding the directory
+#df.append() is depreceated so this function had to be changed to the new .concat function for all three instances
+
 import sys
-sys.path.append('pyall')  # <-- legger til stien så Python finner modulen din
-import pyall              # <-- importer pyall direkte, IKKE "from sys import pyall"
+import os
+sys.path.insert(0, os.path.abspath(os.path.join("pyall", "pyall")))
+import pyall  # refers to pyall.py inside the inner pyall folder
 import pandas as pd
 import time
 import matplotlib.pyplot as plt
@@ -9,6 +15,8 @@ import numpy as np
 import pyvista as pv
 from os import listdir
 from os.path import isfile, join
+import ast
+
 
 
 def read_all_file(filename):
@@ -32,14 +40,15 @@ def read_all_file(filename):
             d = {"time": dtime, "across": [datagram.AcrossTrackDistance], "along": [datagram.AlongTrackDistance],
                  "depth": [datagram.Depth], "pingnumber": counter}
             d_df = pd.DataFrame(data=d)
-            depth_df = depth_df.append(d_df)
+            depth_df = pd.concat([depth_df, d_df], ignore_index=True)
             counter = counter + 1
 
         if TypeOfDatagram == 'P':
             datagram.read()
             d = {"time" : datagram.Time, "lat" : datagram.Latitude, "lon" : datagram.Longitude, "yaw" : datagram.Heading}
             p_df = pd.DataFrame(data=d, index=[0])
-            pos_df = pos_df.append(p_df)
+            pos_df = pd.concat([pos_df, p_df], ignore_index=True)
+
 
 
     df = pd.concat([depth_df,pos_df],join="outer")
@@ -51,42 +60,46 @@ def read_all_file(filename):
     print("Read Duration: %.3f seconds" % (time.time() - start_time)) # print the processing time. It is handy to keep an eye on processing performance.
 
     r.rewind()
-    print("Complete reading ALL file :-)")
+    print("Complete reading ALL file 🙂")
     r.close()
     # see the test code in main() at the end of pyall for more details.  Have Fun
     return df
 
 
 ########### Your Path/Code here ###################################################
-mypath  = "Multibeam/Data/Raw"
-processedfilepath = "Multibeam/Data/Processed"
+mypath = "Multibeam/Data/Raw"
+processedfilepath = "Multibeam/Data/Processed/Processed.csv"
+processeddict = "Multibeam/Data/Processed"
 
 files = [f for f in listdir(mypath) if isfile(join(mypath,f))]
 first = True
 counter = 0
 
+df = pd.read_csv("Multibeam/Data/Raw/0000_20240229_191034_RVGunnerusRAW.csv")
 
 for f in files:
 
-    df = read_all_file(mypath+f)
-    print(df.columns)
-
+ 
     pointcloud = pd.DataFrame(columns=["x","y","z","t"])
+
     if first:
         first = False
-        lat_0 = df["lat"].values[0]
-        lon_0 = df["lon"].values[0]
+        lat_0 = float(df["lat"].values[0])
+        lon_0 = float(df["lon"].values[0])
     meterPerDeg = 111319.444 #Circumference of the earth divided by 360 degrees
 
     rows,cols = df.shape
     for i in range(0,rows-1):
-        across = df["across"].values[i]
-        along = df["along"].values[i]
-        depth = df["depth"].values[i]
-        lat = df["lat"].values[i]
-        lon = df["lon"].values[i]
-        yaw = df["yaw"].values[i]
-        ttime = df["time"].values[i]
+        across = [float(a) for a in ast.literal_eval(df["across"].values[i])]
+        along = [float(a) for a in ast.literal_eval(df["along"].values[i])]
+        depth = [float(d) for d in ast.literal_eval(df["depth"].values[i])]
+
+
+        lat = float(df["lat"].values[i])
+        lon = float(df["lon"].values[i])
+        yaw = float(df["yaw"].values[i])
+        ttime = df["time"].values[i]  # Denne kan være string hvis det er timestamp, så det er kanskje OK
+
 
         along = np.asarray(along)
         across = np.asarray(across)
@@ -94,16 +107,18 @@ for f in files:
 
         x = meterPerDeg*(lat-lat_0) - across*np.sin(np.deg2rad(yaw)) + along*np.cos(np.deg2rad(yaw))
         y = meterPerDeg*np.cos(np.deg2rad(lat_0))*(lon-lon_0) + across*np.cos(np.deg2rad(yaw)) + along*np.sin(np.deg2rad(yaw))
-        z = depth
+        z =depth
 
         d = {"x" : x, "y" : y, "z" : z, "t" : ttime}
         d_df = pd.DataFrame(data=d)
-        pointcloud = pointcloud.append(d_df)
+        pointcloud = pd.concat([pointcloud, d_df], ignore_index=True)
+
 
     print(pointcloud.shape)
     # CSV-exporter
-    df.to_csv(processedfilepath + f[:-4]+ "RAW.csv", index=True)
-    pointcloud.to_csv(processedfilepath +  f[:-4]+ "XYZ.csv", index=True)
+    df.to_csv(os.path.join(processeddict, f[:-4] + "RAW.csv"), index=True)
+    pointcloud.to_csv(os.path.join(processeddict, f[:-4] + "XYZ.csv"), index=True)
+
     counter += 1
 
 x = pointcloud["x"].values
