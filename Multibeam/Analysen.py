@@ -1,11 +1,6 @@
 #Changes that have been done is commented in the code
-
-
-
 import sys
 import os
-sys.path.insert(0, os.path.abspath(os.path.join("pyall", "pyall"))) #Imported pyall by accessing correct py file from directory using absolute path, sys and os had to be imported as well
-import pyall  # refers to pyall.py inside the inner pyall folder
 import pandas as pd
 import time
 import matplotlib.pyplot as plt
