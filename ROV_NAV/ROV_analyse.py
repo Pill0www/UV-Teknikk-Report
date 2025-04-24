@@ -28,21 +28,22 @@ def read_file(filename):
 
     return data
 
-data1 = read_file("ROV_NAV/Data/pos1.csv")
-data2 = read_file("ROV_NAV/Data/pos2.csv")
-data3 = read_file("ROV_NAV/Data/pos3.csv")
-data4 = read_file("ROV_NAV/Data/pos4.csv")
-data5 = read_file("ROV_NAV/Data/pos5.csv")
-data6 = read_file("ROV_NAV/Data/pos6.csv")
+data1 = read_file("ROV_NAV/ROV nav/Pos1ny.csv")
+data2 = read_file("ROV_NAV/ROV nav/Pos2ny.csv")
+data3 = read_file("ROV_NAV/ROV nav/Pos3ny.csv")
+
+#data4 = read_file("ROV_NAV/Data/pos4.csv")
+#data5 = read_file("ROV_NAV/Data/pos5.csv")
+#data6 = read_file("ROV_NAV/Data/pos6.csv")
 
 
-def samle_lister(dict1, dict2, dict3,dict4, dict5, dict6):
+def samle_lister(dict1, dict2, dict3):
     resultat = {}
     for key in dict1:
-        resultat[key] = dict1[key] + dict2[key] + dict3[key]+dict4[key] + dict5[key] + dict6[key]
+        resultat[key] = dict1[key] + dict2[key] + dict3[key]
     return resultat
 
-data = samle_lister(data1,data2,data3,data4,data5,data6)
+data = samle_lister(data1,data2,data3)
 
 
 def parse_time(tid_str):
@@ -96,11 +97,9 @@ def plot_pos_time(data):
 plot_pos_time(data)
 
 def animate_rov(data):
- 
     x = np.array([float(val) for val in data["ROV East"]])
     y = np.array([float(val) for val in data["ROV North"]])
     z = np.array([float(val) for val in data["ROV Height"]])
-    heading_deg = np.array([float(val) for val in data["ROV Gyro"]])
     time = np.array([parse_time(tid) for tid in data["Time"]])
 
     t_numeric = (time - time.min()) / (time.max() - time.min())
@@ -121,13 +120,10 @@ def animate_rov(data):
     ax.set_xlabel('East [m]')
     ax.set_ylabel('North [m]')
     ax.set_zlabel('Height [m]')
-    ax.set_title('ROV 3D Posisjon Animasjon med Heading og Farge')
+    ax.set_title('ROV 3D Posisjon Animasjon')
 
     lc = Line3DCollection([], linewidth=2)
     ax.add_collection3d(lc)
-
-    # PILEN starter som None
-    arrow = None
 
     mappable = cmx.ScalarMappable(norm=norm, cmap=cmap)
     mappable.set_array(t_numeric)
@@ -141,38 +137,25 @@ def animate_rov(data):
         return lc,
 
     def update(frame):
-        nonlocal arrow
         idx = frame * step
-        if idx >= len(x)-1:
-            idx = len(x)-2
+        if idx >= len(x) - 1:
+            idx = len(x) - 2
 
-        # Oppdater linjen
         current_segments = segments_all[:idx]
         current_colors = colors_all[:idx]
         lc.set_segments(current_segments)
         lc.set_color(current_colors)
 
-        # Fjern gammel pil hvis den eksisterer
-        if arrow is not None:
-            arrow.remove()
-
-        # Lag ny pil
-        x0, y0, z0 = x[idx], y[idx], z[idx]
-        head = np.deg2rad(90 - heading_deg[idx])  # 0 grader = Nord
-        u = np.cos(head)
-        v = np.sin(head)
-        w = 0
-        arrow = ax.quiver(x0, y0, z0, u, v, w, color='red', length=5)
-
-        return lc, arrow
+        return lc,
 
     ani = animation.FuncAnimation(
-        fig, update, frames=int(len(x)/step), init_func=init,
+        fig, update, frames=int(len(x) / step), init_func=init,
         interval=20, blit=False
     )
 
     plt.show()
 
     return ani
+
 
 animate_rov(data)
